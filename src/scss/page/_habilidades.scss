@@ -1,0 +1,66 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.habilidad {
+   @include m.grid(1, 3rem);
+   @include m.tablet {
+      @include m.grid(2, 3rem);
+   }
+   @include m.desktop {
+      @include m.grid(3, 3rem);
+   }
+
+   &__item {
+      background-color: v.$azul;
+      padding: 3rem;
+      border-radius: 1rem;
+      @include m.sombra;
+
+      &:hover {
+         background-color: v.$naranja;
+         transition: background-color .6s;
+
+         .habilidad__h3 {
+            border-color: v.$blanco;
+            color: v.$blanco;
+
+            &::before {
+               rotate: 50grad;
+               transform: scale(1.1);
+               transition-duration: .5s;
+               background-color: darken(v.$naranja, 25%);
+            }
+         }
+
+         .habilidad__texto {
+            color: v.$blanco;
+         }
+      }
+   }
+
+   &__h3 {
+      border: 3px solid lighten(v.$azul, 60%);
+      border-radius: 1rem;
+      font-size: 3rem;
+      width: 12rem;
+      height: 12rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 3rem;
+
+      &::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         width: 8rem;
+         height: 100%;
+         border-radius: 1rem;
+         z-index: -1;
+      }
+   }
+}

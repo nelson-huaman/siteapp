@@ -1,0 +1,96 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.servicio {
+   // @include m.grid(1, 3rem);
+   // @include m.tablet {
+   //    @include m.grid(2, 3rem);
+   // }
+   display: flex;
+   justify-content: center;
+   gap: 3rem;
+
+
+   &__item {
+      background-color: lighten(v.$azul, 5%);
+      padding: 4rem 2rem;
+      border-radius: 1rem;
+      max-width: 40rem;
+      min-width: 40rem;
+
+      &--mejorado {
+         background-color: v.$naranja;
+         
+         .servicio__precio {
+            color: v.$azul;
+         }
+
+         .servicio__boton {
+            background-color: v.$azul;
+
+            &::before {
+               background-color: v.$naranja;
+            }
+
+            &:hover {
+               background-color: darken(v.$azul, 2%);
+            }
+         }
+      }
+   }
+
+   &__h3 {
+      margin: 0;
+      font-size: 1.7rem;
+   }
+
+   &__precio {
+      color: v.$naranja;
+      font-weight: v.$bold;
+      font-size: 4rem;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: .6rem;
+
+      &--span {
+         font-size: 2.5rem;
+      }
+   }
+
+   &__ul {
+      @include m.lista;
+      margin: 3rem 0;
+   }
+
+   &__li {
+      padding: .5rem 0;
+      font-size: 1.6rem;
+   }
+
+   &__boton {
+      @include m.boton(v.$naranja, v.$blanco);
+      & {
+         width: auto;
+         text-transform: uppercase;
+         font-weight: v.$semibold;
+         position: relative;
+         padding: 1rem 2.2rem;
+         font-size: 1.6rem;
+         z-index: 2;
+      }
+
+      &::before {
+         content: '';
+         position: absolute;
+         top: .5rem;
+         right: 1rem;
+         width: 3.5rem;
+         height: 3.5rem;
+         background-color: v.$azul;
+         z-index: -1;
+         border-radius: 50%;
+      }
+   }
+}

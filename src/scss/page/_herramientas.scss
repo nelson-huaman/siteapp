@@ -1,0 +1,46 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.herramienta {
+   @include m.grid(1, 3rem);
+
+   @include m.desktop {
+      @include m.grid(3, 3rem);
+   }
+
+   &__item {
+      position: relative;
+      background-color: lighten(v.$azul, 10%);
+      padding: 3rem;
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      &::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         border-radius: 1rem;
+         background-color: v.$naranja;
+         z-index: -1;
+      }
+
+      &:hover {
+         @include m.sombra;
+         background-color: lighten(v.$azul, 5%);
+      }
+
+      &:hover::before {
+         rotate: -6grad;
+         transition-duration: .5s;
+      }
+   }
+
+   &__icono {
+      font-size: 5rem;
+   }
+}

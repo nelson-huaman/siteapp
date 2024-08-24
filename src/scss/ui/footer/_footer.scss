@@ -1,0 +1,36 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer {
+   background-color: darken(v.$azul, 5%);
+
+   &__contenedor {
+      @include m.contenedor;
+      padding: 5rem 0;
+   }
+
+   &__grid{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      @include m.desktop {
+         flex-direction: row;
+         gap: 1rem;
+      }
+   }
+
+   &__logo {
+      width: 10rem;
+   }
+
+   &__copy {
+      text-align: center;
+      font-weight: v.$bold;
+
+      &--regular {
+         font-weight: v.$regular;
+      }
+   }
+}

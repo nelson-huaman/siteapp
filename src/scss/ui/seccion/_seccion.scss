@@ -1,0 +1,53 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.seccion {
+   padding: 8rem 0;
+   position: relative;
+
+   &:nth-last-of-type(even) {
+      background-color: darken(v.$azul, 3%);
+   }
+
+   &__contenedor {
+      @include m.contenedor;
+      text-align: center;
+   }
+
+   &__titulo {
+      margin: 0 auto;
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+
+      &::before,
+      &::after {
+         content: '';
+         width: 0;
+         height: 0;
+         border: .8rem solid transparent;
+         border-bottom-color: v.$naranja;
+         position: absolute;
+         top: 1rem;
+      }
+
+      &::before {
+         border-left-color: v.$naranja;
+         right: -3.5rem;
+      }
+
+      &::after {
+         border-right-color: v.$naranja;
+         left: -3.5rem;
+      }
+   }
+
+   &__descripcion {
+      @include m.contenedorSM;
+      margin-bottom: 4rem;
+   }
+}
+
+
+
