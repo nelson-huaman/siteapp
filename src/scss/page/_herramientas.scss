@@ -10,7 +10,7 @@
 
    &__item {
       position: relative;
-      background-color: lighten(v.$azul, 10%);
+      background-color: lighten(v.$fondo, 10%);
       padding: 3rem;
       border-radius: 1rem;
       display: flex;
@@ -25,13 +25,13 @@
          right: 0;
          bottom: 0;
          border-radius: 1rem;
-         background-color: v.$naranja;
+         background-color: v.$color;
          z-index: -1;
       }
 
       &:hover {
          @include m.sombra;
-         background-color: lighten(v.$azul, 5%);
+         background-color: lighten(v.$fondo, 5%);
       }
 
       &:hover::before {

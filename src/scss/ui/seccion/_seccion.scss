@@ -6,7 +6,7 @@
    position: relative;
 
    &:nth-last-of-type(even) {
-      background-color: darken(v.$azul, 3%);
+      background-color: darken(v.$fondo, 3%);
    }
 
    &__contenedor {
@@ -27,18 +27,18 @@
          width: 0;
          height: 0;
          border: .8rem solid transparent;
-         border-bottom-color: v.$naranja;
+         border-bottom-color: v.$color;
          position: absolute;
          top: 1rem;
       }
 
       &::before {
-         border-left-color: v.$naranja;
+         border-left-color: v.$color;
          right: -3.5rem;
       }
 
       &::after {
-         border-right-color: v.$naranja;
+         border-right-color: v.$color;
          left: -3.5rem;
       }
    }

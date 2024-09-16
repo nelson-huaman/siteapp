@@ -14,8 +14,8 @@ body {
    font-family: v.$fuente;
    font-size: 1.5rem;
    line-height: 1.5;
-   background-color: v.$azul;
-   color: lighten(v.$azul, 70%);
+   background-color: v.$fondo;
+   color: lighten(v.$fondo, 75%);
 }
 
 a {

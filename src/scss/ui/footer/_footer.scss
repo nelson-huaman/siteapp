@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 
 .footer {
-   background-color: darken(v.$azul, 5%);
+   background-color: darken(v.$fondo, 5%);
 
    &__contenedor {
       @include m.contenedor;

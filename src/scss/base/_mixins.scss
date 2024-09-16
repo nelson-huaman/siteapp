@@ -161,7 +161,7 @@
    font-weight: v.$bold;
 
    &:hover {
-      color: v.$azul;
+      color: v.$fondo;
       cursor: pointer;
    }
 }
@@ -184,7 +184,7 @@
    margin-top: 1.5rem;
 
    > li {
-      background-color: v.$azul;
+      background-color: v.$fondo;
       padding: 1rem;
       border-radius: .5rem;
       color: v.$blanco;

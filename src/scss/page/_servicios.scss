@@ -12,28 +12,28 @@
 
 
    &__item {
-      background-color: lighten(v.$azul, 5%);
+      background-color: lighten(v.$fondo, 5%);
       padding: 4rem 2rem;
       border-radius: 1rem;
       max-width: 40rem;
       min-width: 40rem;
 
       &--mejorado {
-         background-color: v.$naranja;
+         background-color: v.$color;
          
          .servicio__precio {
-            color: v.$azul;
+            color: v.$fondo;
          }
 
          .servicio__boton {
-            background-color: v.$azul;
+            background-color: v.$fondo;
 
             &::before {
-               background-color: v.$naranja;
+               background-color: v.$color;
             }
 
             &:hover {
-               background-color: darken(v.$azul, 2%);
+               background-color: darken(v.$fondo, 2%);
             }
          }
       }
@@ -45,7 +45,7 @@
    }
 
    &__precio {
-      color: v.$naranja;
+      color: v.$color;
       font-weight: v.$bold;
       font-size: 4rem;
       margin: 0;
@@ -70,7 +70,7 @@
    }
 
    &__boton {
-      @include m.boton(v.$naranja, v.$blanco);
+      @include m.boton(v.$color, v.$blanco);
       & {
          width: auto;
          text-transform: uppercase;
@@ -88,7 +88,7 @@
          right: 1rem;
          width: 3.5rem;
          height: 3.5rem;
-         background-color: v.$azul;
+         background-color: v.$fondo;
          z-index: -1;
          border-radius: 50%;
       }

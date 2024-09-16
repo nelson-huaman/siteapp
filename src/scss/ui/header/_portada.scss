@@ -7,7 +7,7 @@
    background-repeat: no-repeat;
    background-size: cover, cover;
    background-position: center center, center center;
-   background-color: darken(v.$azul, 5%);
+   background-color: darken(v.$fondo, 5%);
 
    &__contenedor {
       @include m.contenedor;
@@ -63,7 +63,7 @@
       }
 
       &--color {
-         color: v.$naranja;
+         color: v.$color;
       }
    }
 
@@ -119,7 +119,7 @@
    }
 
    &__boton {
-      @include m.boton(v.$naranja, v.$blanco);
+      @include m.boton(v.$color, v.$blanco);
       & {
          width: auto;
          text-transform: uppercase;
