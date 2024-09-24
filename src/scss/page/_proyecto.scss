@@ -1,7 +1,7 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.blog {
+.proyecto {
    display: flex;
    width: 100%;
    flex-direction: column;
@@ -72,5 +72,9 @@
 
    .menu-redes {
       margin: 0;
+   }
+
+   .tecnologia {
+      justify-content: start;
    }
 }

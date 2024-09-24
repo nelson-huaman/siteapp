@@ -10,34 +10,46 @@
 
    &__item {
       position: relative;
-      background-color: lighten(v.$fondo, 10%);
-      padding: 3rem;
-      border-radius: 1rem;
       display: flex;
       flex-direction: column;
       text-align: left;
 
-      &::before {
-         content: '';
-         position: absolute;
-         top: 0;
-         left: 0;
-         right: 0;
-         bottom: 0;
-         border-radius: 1rem;
-         background-color: v.$color;
-         z-index: -1;
-      }
-
       &:hover {
-         @include m.sombra;
-         background-color: lighten(v.$fondo, 5%);
-      }
+         .herramienta__div {
+            visibility: visible;
+            rotate: -5grad;
+            transition-duration: .6s;
 
-      &:hover::before {
-         rotate: -6grad;
-         transition-duration: .5s;
+            @include m.desktop {
+               rotate: -6grad;
+            }
+         }
+
+         .herramienta__contenido {
+            background-color: lighten(v.$fondo, 5%);
+         }
       }
+   }
+
+   &__div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: v.$color;
+      border-radius: 1rem;
+      visibility: hidden;
+      @include m.sombra;
+   }
+
+   &__contenido {
+      background-color: lighten(v.$fondo, 10%);
+      padding: 3rem;
+      border-radius: 1rem;
+      z-index: 1;
+      @include m.sombra;
+      overflow: auto;
    }
 
    &__icono {

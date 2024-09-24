@@ -1,9 +1,18 @@
 <main class="main">
    <div class="main__contenedor">
-      <div class="blog">
-         <div class="blog__sidebar">
-            
-            <div class="blog__h2"> <i class="fa-solid fa-share-nodes"></i> Compartir</div>
+      <div class="proyecto">
+         <div class="proyecto__sidebar">
+            <a href="#" class="proyecto__boton">
+               <i class="fa-solid fa-share-from-square"></i> Visitar Web
+            </a>
+            <div class="proyecto__h2"><i class="fa-solid fa-code"></i> Proyecto realizado</div>
+            <ul class="tecnologia">
+               <li class="tecnologia__li html5">HTML5</li>
+               <li class="tecnologia__li css">CSS</li>
+               <li class="tecnologia__li js">JS</li>
+               <li class="tecnologia__li sass">SASS</li>
+            </ul>
+            <div class="proyecto__h2"> <i class="fa-solid fa-share-nodes"></i> Compartir</div>
             <div class="compartir">
                <nav class="menu-redes">
                   <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://facebook.com/">
@@ -17,35 +26,12 @@
                   </a>
                </nav>
             </div>
-            <ul class="tag">
-               <li class="tag__li">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  12. Jul. 2024
-               </li>
-               <li class="tag__li">
-                  <i class="fa-solid fa-tag"></i>
-                  PHP
-               </li>
-            </ul>
-
-            <div class="blog__h2"><i class="fa-solid fa-tags"></i> Otra Categorías</div>
-
-            <div class="tags">
-               <a href="#" class="tags__enlace html5">HTML</a>
-               <a href="#" class="tags__enlace css">CSS</a>
-               <a href="#" class="tags__enlace js">JS</a>
-               <a href="#" class="tags__enlace sass">SASS</a>
-               <a href="#" class="tags__enlace js">JS</a>
-               <a href="#" class="tags__enlace js">JS</a>
-               <a href="#" class="tags__enlace js">JS</a>
-               <a href="#" class="tags__enlace js">JS</a>
-               <a href="#" class="tags__enlace js">JS</a>
-            </div>
+            
             
          </div>
-         <div class="blog__informacion">
-            <img class="blog__imagen" src="/build/img/responsive.webp" alt="">
-            <p class="blog__texto">
+         <div class="proyecto__informacion">
+            <img class="proyecto__imagen" src="/build/img/responsive.webp" alt="">
+            <p class="proyecto__texto">
                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, qui molestias. Maxime, totam! Id exercitationem fuga corrupti maiores velit illo eos quaerat voluptate, minima, quisquam nostrum sit ad repellendus eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quidem, iusto qui culpa ad labore accusamus inventore dolor cumque libero velit, a sit sapiente sequi nobis adipisci, voluptatum odio reiciendis?
             </p>
          </div>

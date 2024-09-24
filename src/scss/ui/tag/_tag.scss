@@ -1,0 +1,21 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.tag {
+   @include m.lista;
+   display: flex;
+   gap: 2rem;
+   margin: 3rem 0;
+
+   &__li {
+      font-weight: v.$semibold;
+      display: flex;
+      gap: .7rem;
+      align-items: center;
+   
+      i {
+         color: v.$color;
+         font-size: 2rem;
+      }
+   }
+}

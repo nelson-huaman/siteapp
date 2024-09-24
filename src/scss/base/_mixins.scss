@@ -26,7 +26,7 @@
 }
 
 @mixin boton($bgColor, $colorTexto) {
-   background-color: $bgColor;
+   background-color: darken($bgColor, 15%);
    padding: 1.5rem 4rem;
    color: $colorTexto;
    font-size: 1.8rem;
@@ -38,9 +38,10 @@
    width: 100%;
    border-radius: .6rem;
    display: inline-block;
+   text-transform: uppercase;
 
    &:hover {
-      background-color: darken($bgColor, 10%);
+      background-color: darken($bgColor, 25%);
       cursor: pointer;
    }
 }
@@ -153,6 +154,72 @@
    }
 }
 
+@mixin tecnologia {
+   display: flex;
+   gap: .7rem;
+   font-size: 1.3rem;
+   align-items: center;
+   font-weight: v.$medium;
+
+   &::before {
+      font-style: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: 'Font Awesome 6 Brands';
+      font-size: 2.2rem;
+   }
+
+   &[class*="html5"]::before {
+      content: '\f13b';
+      color: #E4552D;
+   }
+
+   &[class*="css"]::before {
+      content: '\f38b';
+      color: #2D53E5;
+   }
+
+   &[class*="js"]::before {
+      content: '\f3b8';
+      color: #F7E025;
+   }
+
+   &[class*="nodejs"]::before {
+      content: '\f3d3';
+      color: #83CD29;
+   }
+
+   &[class*="react"]::before {
+      content: '\f41b';
+      color: #1BA1CC;
+   }
+
+   &[class*="sass"]::before {
+      content: '\f41e';
+      color: #CE6B9C;
+   }
+
+   &[class*="php"]::before {
+      content: '\f457';
+      color: #7B7FB5;
+   }
+
+   &[class*="wordpress"]::before {
+      content: '\f19a';
+      color: #28799E;
+   }
+
+   &[class*="woocommerce"]::before {
+      content: '\f23d';
+      color: #B16195;
+   }
+ 
+}
+
+@mixin sombraImagen {
+   filter: drop-shadow(0px 1px 4px rgba(v.$blanco, .6));
+}
+
 @mixin enlace {
    all: unset;
    color: v.$blanco;
@@ -167,7 +234,7 @@
 }
 
 @mixin sombra {
-   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+   box-shadow: rgba(v.$blanco, 0.1) 0px 4px 12px;
 }
 
 @mixin lista {

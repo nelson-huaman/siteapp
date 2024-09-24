@@ -15,16 +15,13 @@
                <a href="/" class="header__enlace">Inicio</a>
             </li>
             <li class="header__item">
-               <a href="acerca-de" class="header__enlace">Acerca De</a>
+               <a href="/acerca-de" class="header__enlace">Acerca De</a>
             </li>
             <li class="header__item">
-               <a href="/proyectos" class="header__enlace">Proyectos</a>
+               <a href="/proyectos" class="header__enlace header__activo">Proyectos</a>
             </li>
             <li class="header__item">
-               <a href="/servicios" class="header__enlace">Servicios</a>
-            </li>
-            <li class="header__item">
-               <a href="/blog" class="header__enlace">Blog</a>
+               <a href="/blogs" class="header__enlace">Blog</a>
             </li>
             <li class="header__item">
                <a href="/contacto" class="header__enlace">Contacto</a>
@@ -69,29 +66,34 @@
                      Contáctame
                   </a>
                   <nav class="menu-redes">
-                     <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://facebook.com/C%C3%B3digo-Con-Juan-103341632130628">
+                     <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://facebook.com/">
                         <span class="menu-redes__ocultar">Facebook</span>
                      </a>
-                     <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://twitter.com/codigoconjuan">
+                     <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://twitter.com/">
                         <span class="menu-redes__ocultar">Twitter</span>
                      </a>
-                     <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://youtube.com/codigoconjuan">
+                     <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://youtube.com/">
                         <span class="menu-redes__ocultar">YouTube</span>
                      </a>
-                     <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://instagram.com/codigoconjuan">
+                     <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://instagram.com/">
                         <span class="menu-redes__ocultar">Instagram</span>
                      </a>
-                     <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://tiktok.com/@codigoconjuan">
+                     <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://tiktok.com/">
                         <span class="menu-redes__ocultar">Tiktok</span>
                      </a>
-                     <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://github.com/codigoconjuan">
+                     <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://github.com/">
                         <span class="menu-redes__ocultar">Github</span>
                      </a>
                   </nav>
                </div>
             </div>
             <div class="portada__imagen">
-               <img src="/build/img/foto.webp" alt="" class="portada__foto">
+               <picture>
+                  <source srcset="/build/img/foto.webp" type="image/webp">
+                  <source srcset="/build/img/foto.avif" type="image/avif">
+                  <source srcset="/build/img/foto.png" type="image/png">
+                  <img class="portada__foto" loading="lazy" width="200" height="300" src="/build/img/foto.png" alt="Imagen Ponente">
+               </picture>
             </div>
          </div>
       </div>

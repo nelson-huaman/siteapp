@@ -1,0 +1,13 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.main {
+   margin-bottom: 8rem;
+
+
+   &__contenedor {
+      @include m.contenedor;
+      text-align: center;
+   }
+
+}

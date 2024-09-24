@@ -10,6 +10,7 @@ class PaginaController {
 
       $router->renderizar('paginas/inicio', [
          'page_name' => 'Inicio',
+         'page_description' => 'Desarrollo web',
          'header' => true
       ]);
    }
@@ -19,6 +20,7 @@ class PaginaController {
       $router->renderizar('paginas/acercade', [
          'page_name' => 'Acerca De',
          'page_titulo' => 'Conoce Más Sobre Nosotros',
+         'page_description' => 'Desarrollo web',
          'header' => false
       ]);
    }
@@ -28,24 +30,17 @@ class PaginaController {
       $router->renderizar('paginas/proyectos', [
          'page_name' => 'Proyectos',
          'page_titulo' => 'Creando Conexiones: Proyectos Web que Transforman la Experiencia en Línea',
+         'page_description' => 'Desarrollo web',
          'header' => false
       ]);
    }
 
-   public static function servicios(Router $router) {
+   public static function blogs(Router $router) {
 
-      $router->renderizar('paginas/servicios', [
-         'page_name' => 'Servicios',
-         'page_titulo' => 'Cómo Podemos Ayudarte: Servicios Personalizados para Ti',
-         'header' => false
-      ]);
-   }
-
-   public static function blog(Router $router) {
-
-      $router->renderizar('paginas/blog', [
+      $router->renderizar('paginas/blogs', [
          'page_name' => 'Blog',
          'page_titulo' => 'Enterate de las últimas noticias en nuestro blog',
+         'page_description' => 'Desarrollo web',
          'header' => false
       ]);
    }
@@ -54,7 +49,28 @@ class PaginaController {
 
       $router->renderizar('paginas/contacto', [
          'page_name' => 'Contacto',
-         'page_titulo' => 'Pongámonos en Contacto: Estamos Aquí para Ti',
+         'page_titulo' => 'Pongámonos en contacto: Estamos aquí para ti',
+         'page_description' => 'Pongámonos en contacto: Estamos aquí para ti',
+         'header' => false
+      ]);
+   }
+
+   public static function proyecto(Router $router) {
+
+      $router->renderizar('paginas/proyecto', [
+         'page_name' => 'Proyecto',
+         'page_titulo' => 'Proyecto 01',
+         'page_description' => 'Desarrollo web',
+         'header' => false
+      ]);
+   }
+
+   public static function blog(Router $router) {
+
+      $router->renderizar('paginas/blog', [
+         'page_name' => 'Blog',
+         'page_titulo' => 'Blog 01',
+         'page_description' => 'Desarrollo web',
          'header' => false
       ]);
    }

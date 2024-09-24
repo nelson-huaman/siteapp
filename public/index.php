@@ -11,7 +11,10 @@ $router->get('/', [PaginaController::class, 'inicio']);
 $router->get('/acerca-de', [PaginaController::class, 'acercade']);
 $router->get('/proyectos', [PaginaController::class, 'proyectos']);
 $router->get('/servicios', [PaginaController::class, 'servicios']);
-$router->get('/blog', [PaginaController::class, 'blog']);
+$router->get('/blogs', [PaginaController::class, 'blogs']);
 $router->get('/contacto', [PaginaController::class, 'contacto']);
+
+$router->get('/proyecto/proyecto-01', [PaginaController::class, 'proyecto']);
+$router->get('/blog/blog-01', [PaginaController::class, 'blog']);
 
 $router->rutas();
