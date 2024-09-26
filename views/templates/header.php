@@ -8,7 +8,7 @@
             <li class="header__mobil">
                <img class="header__logo" src="/build/img/logo.svg" alt="Logo Nelson">
                <button class="header__close" aria-label="Close Mobile Menu">
-                  <i class="fas fa-times" aria-hidden="true"></i>
+                  <i class="fa-solid fa-xmark"></i>
                </button>
             </li>
             <li class="header__item">
@@ -30,23 +30,11 @@
                Facebook
             </li>
          </ul>
-         <button class="header__buscar">
-            <i class="fas fa-search fa-lg"></i>
-         </button>
-         
          <button class="header__open"  aria-label="Open Mobile Menu">
-            <i class="fas fa-bars" aria-hidden="true"></i>
+            <i class="fa-solid fa-bars"></i>
          </button>
       </nav>
    </div>
-   <form class="header__form-buscar">
-      <div class="header__form-buscar--div">
-         <input type="search" placeholder="Buscar" class="header__form-buscar--input">
-         <button aria-label="Buscar" type="submit" class="header__form-buscar--submit">
-            <i class="fas fa-search fa-2x" aria-hidden="true"></i>  
-         </button>
-      </div>
-   </form>
 </header>
 
 <?php if($header) { ?>
@@ -98,10 +86,10 @@
          </div>
       </div>
    </section>
-<?php } else { ?>
-   <section class="page-name">
-      <div class="page-name__contenedor">
-         <h1 class="page-name__titulo"><?php echo $page_titulo; ?></h1>
-      </div>
-   </section>
+   <?php return; ?>
 <?php } ?>
+<section class="page-name">
+   <div class="page-name__contenedor">
+      <h1 class="page-name__titulo"><?php echo $page_titulo; ?></h1>
+   </div>
+</section>

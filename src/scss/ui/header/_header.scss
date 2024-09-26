@@ -164,11 +164,11 @@
    }
 
    &__form-buscar {
-      position: absolute;
+      position: relative;
       top: 100%;
       left: 0;
       right: 0;
-      visibility: hidden;
+      visibility: visible;
       opacity: 0;
       padding: 2rem 0;
       background-color: lighten(v.$fondo, 10%);

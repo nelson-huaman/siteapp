@@ -1,0 +1,78 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.sidebar-blog {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   text-align: left;
+
+   @include m.desktop {
+      flex: 0 0 30%;
+   }
+
+   &__item {
+      padding: 2rem;
+      background-color: darken(v.$fondo, 4%);
+   }
+
+   &__h3 {
+      margin: 0;
+      margin-bottom: 2rem;
+   }
+
+   &__post {
+      background-color: v.$fondo;
+      padding: 2rem;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+
+      &:last-of-type {
+         margin-bottom: 0;
+      }
+   }
+   
+   &__h4 {
+      margin: 0;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+   }
+
+   &__informacion {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__div {
+      display: flex;
+      gap: 1rem;
+
+      p {
+         display: flex;
+         align-items: center;
+         font-weight: v.$bold;
+         gap: .5rem;
+         font-size: 1.2rem;
+
+         i {
+            color: v.$color;
+            font-size: 1.5rem;
+         }
+      }
+   }
+
+   &__boton {
+      color: darken(v.$color, 10%);
+      font-weight: v.$bold;
+      border-radius: 1rem;
+      font-size: 1.4rem;
+
+      &:hover {
+         cursor: pointer;
+         color: darken(v.$color, 20%);
+      }
+   }
+
+
+}

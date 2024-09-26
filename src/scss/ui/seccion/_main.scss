@@ -4,10 +4,22 @@
 .main {
    margin-bottom: 8rem;
 
-
    &__contenedor {
       @include m.contenedor;
       text-align: center;
+   }
+
+   &__post {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 2rem;
+      position: relative;
+
+      @include m.desktop {
+         flex-direction: row;
+      }
+
    }
 
 }
