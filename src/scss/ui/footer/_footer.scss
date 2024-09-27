@@ -1,8 +1,9 @@
+@use "sass:color";
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
 .footer {
-   background-color: darken(v.$fondo, 5%);
+   background-color: color.adjust(v.$fondo, $lightness: -5%);
 
    &__contenedor {
       @include m.contenedor;
@@ -18,6 +19,7 @@
       @include m.desktop {
          flex-direction: row;
          gap: 1rem;
+         
       }
    }
 

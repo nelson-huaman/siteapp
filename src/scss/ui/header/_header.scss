@@ -1,5 +1,6 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+@use "sass:color";
 
 .no-transition {
    transition: none !important;
@@ -11,7 +12,7 @@
    top: 0;
    z-index: 10;
    padding: 2rem 0;
-   background-color: darken(v.$fondo, 4%);
+   background-color: color.adjust(v.$fondo, $lightness: -4%);
 
    &__contenedor {
       @include m.contenedor;
@@ -49,7 +50,7 @@
       flex-direction: column;
       width: 80%;
       overflow-y: auto;
-      background-color: lighten(v.$fondo, 5%);
+      background-color: color.adjust(v.$fondo, $lightness: 5%);
       @include m.lista;
       padding: 3rem;
 
@@ -73,7 +74,7 @@
       display: flex;
       font-size: 2rem;
       padding: .5rem 0;
-      color: lighten(v.$fondo, 75%);
+      color: color.adjust(v.$fondo, $lightness: 75%);
       text-transform: uppercase;
       font-weight: v.$medium;
 
@@ -147,63 +148,6 @@
 
       &:hover {
          color: v.$color;
-      }
-   }
-
-   // Buscar
-   &__buscar {
-      @include m.enlace;
-      & {
-         margin-right: 2rem;
-         font-size: 2rem;
-      }
-
-      &:hover {
-         color: v.$color;
-      }
-   }
-
-   &__form-buscar {
-      position: relative;
-      top: 100%;
-      left: 0;
-      right: 0;
-      visibility: visible;
-      opacity: 0;
-      padding: 2rem 0;
-      background-color: lighten(v.$fondo, 10%);
-      transition: all 0.2s;
-      z-index: 1;
-
-      &--div {
-         position: relative;
-         width: 90%;
-         @include m.contenedor;
-         padding: 1rem;
-      }
-
-      &--input {
-         width: 100%;
-         border-radius: 1rem;
-         border: none;
-         padding: 1rem 2rem;
-      }
-
-      &--submit {
-         @include m.enlace;
-         & {
-            position: absolute;
-            right: 2rem;
-            top: 50%;
-            transform: translateY(-50%);
-            color: v.$fondo;
-         }
-         
-      }
-
-      &--visible {
-         visibility: visible;
-         opacity: 1;
       }
    }
 

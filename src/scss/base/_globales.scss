@@ -1,3 +1,4 @@
+@use "sass:color";
 @use 'variables' as v;
 
 *, *:before, *:after {
@@ -15,7 +16,7 @@ body {
    font-size: 1.5rem;
    line-height: 1.5;
    background-color: v.$fondo;
-   color: lighten(v.$fondo, 75%);
+   color: color.adjust(v.$fondo, $lightness: 75%);
 }
 
 a {

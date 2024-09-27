@@ -1,3 +1,4 @@
+@use "sass:color";
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
@@ -7,7 +8,7 @@
    background-repeat: no-repeat;
    background-size: cover, cover;
    background-position: center center, center center;
-   background-color: darken(v.$fondo, 5%);
+   background-color: color.adjust(v.$fondo, $lightness: -5%);
 
    &__contenedor {
       @include m.contenedor;

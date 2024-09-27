@@ -1,3 +1,4 @@
+@use "sass:color";
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
@@ -13,7 +14,7 @@
 
    &__item {
       padding: 2rem;
-      background-color: darken(v.$fondo, 4%);
+      background-color: color.adjust(v.$fondo, $lightness: -4%);
    }
 
    &__h3 {
@@ -63,14 +64,15 @@
    }
 
    &__boton {
-      color: darken(v.$color, 10%);
+      color: color.adjust(v.$color, $lightness: -10%);
       font-weight: v.$bold;
       border-radius: 1rem;
       font-size: 1.4rem;
 
       &:hover {
          cursor: pointer;
-         color: darken(v.$color, 20%);
+         color: color.adjust(v.$color, $lightness: -20%);
+         
       }
    }
 

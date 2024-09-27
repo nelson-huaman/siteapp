@@ -1,3 +1,4 @@
+@use "sass:color";
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
@@ -17,10 +18,10 @@
    &__item {
       border-radius: 1rem;
       overflow: auto;
-      background-color: lighten(v.$fondo, 1%);
+      background-color: color.adjust(v.$fondo, $lightness: 1%);
 
       &:hover {
-         background-color: lighten(v.$fondo, 3%);
+         background-color: color.adjust(v.$fondo, $lightness: 3%);
          .blog__h3 {
             color: v.$color;
          }

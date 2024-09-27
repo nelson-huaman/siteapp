@@ -1,3 +1,4 @@
+@use "sass:color";
 @use 'variables' as v;
 
 // Media Queries
@@ -26,7 +27,7 @@
 }
 
 @mixin boton($bgColor, $colorTexto) {
-   background-color: darken($bgColor, 15%);
+   background-color: color.adjust($bgColor, $lightness: -15%);
    padding: 1.5rem 4rem;
    color: $colorTexto;
    font-size: 1.8rem;
@@ -41,7 +42,7 @@
    text-transform: uppercase;
 
    &:hover {
-      background-color: darken($bgColor, 25%);
+      background-color: color.adjust($bgColor, $lightness: -25%);
       cursor: pointer;
    }
 }
