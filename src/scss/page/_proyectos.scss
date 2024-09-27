@@ -1,4 +1,3 @@
-@use "sass:color";
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
@@ -16,11 +15,11 @@
    &__item {
       padding: 2rem;
       border-radius: 1rem;
-      background-color: color.adjust(v.$fondo, $lightness: 1%);
+      background-color: adjust-color(v.$fondo, $lightness: 1%);
       @include m.sombra;
 
       &:hover {
-         background-color: color.adjust(v.$fondo, $lightness: 2%);
+         background-color: adjust-color(v.$fondo, $lightness: 2%);
 
          .proyecto__h3 {
             color: v.$color;

@@ -1,4 +1,3 @@
-@use "sass:color";
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
@@ -27,7 +26,7 @@
          }
 
          .herramienta__contenido {
-            background-color: color.adjust(v.$fondo, $lightness: 5%)
+            background-color: adjust-color(v.$fondo, $lightness: 5%);
          }
       }
    }
@@ -45,7 +44,7 @@
    }
 
    &__contenido {
-      background-color: color.adjust(v.$fondo, $lightness: 10%);
+      background-color: adjust-color(v.$fondo, $lightness: 10%);
       padding: 3rem;
       border-radius: 1rem;
       z-index: 1;
