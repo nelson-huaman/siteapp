@@ -4,10 +4,17 @@
 .blogs {
    flex: 1;
    
+   
    @include m.grid(1, 3rem);
 
-   @include m.tablet {
+   @include m.desktop {
       @include m.grid(2, 3rem);
+   }
+
+   &--inicio {
+      @include m.desktop {
+         @include m.grid(3, 3rem);
+      }
    }
 
    // @include m.desktop {

@@ -15,16 +15,16 @@
                <a href="/" class="header__enlace">Inicio</a>
             </li>
             <li class="header__item">
-               <a href="/acerca-de" class="header__enlace">Acerca De</a>
+               <a href="/acerca-de" class="header__enlace <?php echo paginaActual('acerca-de') ? 'header__activo' : ''; ?>">Acerca De</a>
             </li>
             <li class="header__item">
-               <a href="/proyectos" class="header__enlace header__activo">Proyectos</a>
+               <a href="/proyectos" class="header__enlace <?php echo paginaActual('proyectos') ? 'header__activo' : ''; ?>">Proyectos</a>
             </li>
             <li class="header__item">
-               <a href="/blogs" class="header__enlace">Blog</a>
+               <a href="/blogs" class="header__enlace <?php echo paginaActual('blogs') ? 'header__activo' : ''; ?>">Blog</a>
             </li>
             <li class="header__item">
-               <a href="/contacto" class="header__enlace">Contacto</a>
+               <a href="/contacto" class="header__enlace <?php echo paginaActual('contacto') ? 'header__activo' : ''; ?>">Contacto</a>
             </li>
             <li class="header__redes">
                Facebook

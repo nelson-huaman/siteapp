@@ -1,0 +1,19 @@
+@use 'base/variables' as v;
+
+.alerta {
+   padding: 1rem ;
+   font-weight: v.$bold;
+   // font-size: 1.4rem;
+   margin-bottom: 1.5rem;
+
+   &:last-of-type {
+      margin-bottom: 2rem;
+   }
+
+   &--error {
+      // background-color: rgba(v.$error, .2);
+      background-color: adjust-color(v.$error, $lightness: 30%);
+      border-left: .5rem solid v.$error;
+      color: adjust-color(v.$error, $lightness: -30%);
+   }
+}

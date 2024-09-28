@@ -19,7 +19,17 @@
       @include m.desktop {
          flex-direction: row;
       }
-
    }
 
+   &__grid {
+      @include m.grid(1, 3rem);
+      @include m.desktop {
+         @include m.grid(2, 3rem);
+      }
+
+      p {
+         background-color: v.$color;
+         padding: 2rem;
+      }
+   }
 }

@@ -68,7 +68,7 @@
    <div class="seccion__contenedor">
       <h2 class="seccion__titulo">Mi blog</h2>
       <p class="seccion__descripcion">Desarrollador web con experiencia en diseño, implementación y optimización de sitios y aplicaciones. Experto en HTML, CSS, JavaScript.</p>
-      <div class="blogs">
+      <div class="blogs blogs--inicio">
          <div class="blogs__item">
             <img src="https://canto-wp-media.s3.amazonaws.com/app/uploads/2019/07/19194417/insert-image-html.jpg" alt="Iamgen" class="blogs__imagen">
             <div class="blogs__content">

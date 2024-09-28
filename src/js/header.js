@@ -6,10 +6,6 @@
       const openMenu = document.querySelector(".header__open")
       const closeMenu = document.querySelector(".header__close")
       const navegacion = document.querySelector(".header__nav")
-      const toggleSearchForm = document.querySelector(".header__buscar")
-      const buscarForm = document.querySelector(".header__form-buscar")
-      
-      const isVisible = "header__form-buscar--visible"
       const showMenu = "header__show"
       const noTransition = "no-transition"
       let resize;
@@ -20,10 +16,6 @@
 
       closeMenu.addEventListener("click", () => {
          navegacion.classList.remove(showMenu)
-      })
-
-      toggleSearchForm.addEventListener("click", () => {
-         buscarForm.classList.re(isVisible)
       })
 
       window.addEventListener("resize", () => {

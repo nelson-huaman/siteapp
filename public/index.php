@@ -1,5 +1,6 @@
 <?php
 
+use Controllers\LoginController;
 use Controllers\PaginaController;
 use MVC\Router;
 
@@ -16,5 +17,11 @@ $router->get('/contacto', [PaginaController::class, 'contacto']);
 
 $router->get('/proyecto/proyecto-01', [PaginaController::class, 'proyecto']);
 $router->get('/blog/blog-01', [PaginaController::class, 'blog']);
+
+
+$router->get('/login', [LoginController::class, 'index']);
+$router->post('/login', [LoginController::class, 'index']);
+
+
 
 $router->rutas();
