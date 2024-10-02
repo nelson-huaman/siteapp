@@ -222,13 +222,13 @@
 
 @mixin enlace {
    all: unset;
-   color: v.$blanco;
+   // color: v.$blanco;
    font-size: 1.4rem;
    text-transform: uppercase;
    font-weight: v.$bold;
 
    &:hover {
-      color: v.$fondo;
+      color: v.$color;
       cursor: pointer;
    }
 }

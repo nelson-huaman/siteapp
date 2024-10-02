@@ -1,0 +1,58 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.menu {
+   overflow-y: scroll;
+   background-color: v.$fondo;
+   @include m.lista;
+
+   &__item {
+      padding: 1.5rem 1rem;
+
+      i {
+         width: 1.8rem;
+         text-align: center;
+      }
+
+      &:hover {
+         cursor: pointer;
+         background-color: adjust-color(v.$fondo, $lightness: 6%);
+         transition: background-color .5s ease;
+      }
+
+   }
+
+   &__enlace {
+      color: adjust-color(v.$fondo, $lightness: 75%);
+      font-weight: v.$medium;
+      white-space: nowrap;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      line-height: 1.2;
+      gap: 1rem;
+   }
+
+   &__nombre {
+      flex-grow: 1;
+   }
+
+   &__icono {
+      &::after {
+         content: "";
+         width: .6rem;
+         height: .6rem;
+         border-bottom: 2px solid v.$blanco;
+         border-right: 2px solid v.$blanco;
+         rotate: -45grad;
+         margin-right: .2rem;
+      }
+   }
+
+   &__submenu {
+      @include m.lista;
+      padding-left: 2rem;
+      font-size: 1.2rem;
+      display: none;
+   }
+}

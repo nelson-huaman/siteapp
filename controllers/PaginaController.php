@@ -74,4 +74,14 @@ class PaginaController {
          'header' => false
       ]);
    }
+
+   public static function error(Router $router) {
+
+      $router->renderizar('paginas/error', [
+         'page_name' => '404',
+         'page_titulo' => '404 Página no encontrado',
+         'page_description' => '404 Pagina no encontrado',
+         'header' => false
+      ]);
+   }
 }

@@ -6,6 +6,8 @@
    position: relative;
 
    &:nth-last-of-type(even) {
+      // background-color: lighten(v.$error, -3%);
+      // background-color: scale-color(v.$fondo, $lightness: -3%);
       background-color: adjust-color(v.$fondo, $lightness: -3%);
    }
 

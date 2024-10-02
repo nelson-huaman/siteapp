@@ -1,5 +1,6 @@
 <?php
 
+use Controllers\DashboardController;
 use Controllers\LoginController;
 use Controllers\PaginaController;
 use MVC\Router;
@@ -17,11 +18,17 @@ $router->get('/contacto', [PaginaController::class, 'contacto']);
 
 $router->get('/proyecto/proyecto-01', [PaginaController::class, 'proyecto']);
 $router->get('/blog/blog-01', [PaginaController::class, 'blog']);
+$router->get('/404', [PaginaController::class, 'error']);
 
 
 $router->get('/login', [LoginController::class, 'index']);
 $router->post('/login', [LoginController::class, 'index']);
+$router->get('/salir', [LoginController::class, 'salir']);
+
+// Administrador
+$router->get('/admin/dashboard', [DashboardController::class, 'index']);
 
 
+$router->get('/admin/404', [DashboardController::class, 'error']);
 
 $router->rutas();

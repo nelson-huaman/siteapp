@@ -1,0 +1,71 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.dashboard {
+   height: 100%;
+   display: flex;
+   background-color: adjust-color(v.$gris, $lightness: 6%);
+
+   &__grid {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      width: 100%;
+   }
+
+   &__header {
+      padding: 1rem 2rem;
+      position: sticky;
+      background-color: adjust-color(v.$gris, $lightness: 6%);
+      top: 0;
+      color: v.$negro;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__notificacion {
+      display: flex;
+      gap: 1rem;
+   }
+
+   &__enlace {
+      position: relative;
+      padding-right: 1rem;
+      @include m.enlace;
+
+      i {
+         font-size: 1.6rem;
+      }
+
+      span {
+         background-color: adjust-color(v.$error, $lightness: -10%);
+         color: v.$blanco;
+         font-size: 1rem;
+         position: absolute;
+         top: 0;
+         right: 0;
+         height: 1.2rem;
+         width: 1.2rem;
+         border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+
+   &__h2 {
+      // margin: 1rem 0;
+      font-size: 2rem;
+      text-align: center;
+      color: v.$fondo;
+   }
+
+   &__contenido {
+      padding: 1rem 2rem;
+      width: 100%;
+      overflow-y: scroll;
+   }
+
+}

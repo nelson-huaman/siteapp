@@ -42,4 +42,8 @@ class LoginController {
       ]);
    }
 
+   public static function salir() {
+      
+   }
+
 }

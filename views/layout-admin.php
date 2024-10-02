@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title><?php echo $titulo; ?> | ACIS</title>
+      <title><?php echo $titulo; ?> | Nelson</title>
       <link rel="icon" type="image/x-icon" href="/build/img/icono.ico">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
       <?php include_once __DIR__ .'/templates/admin-sidebar.php'; ?>
       <div class="dashboard__grid">
          <div class="dashboard__header">
-            <?php include_once __DIR__ .'/templates/admin-header.php'; ?>
+            <?php include_once __DIR__ .'/templates/barra.php'; ?>
          </div>
          <main class="dashboard__contenido">
             <?php echo $contenido; ?> 

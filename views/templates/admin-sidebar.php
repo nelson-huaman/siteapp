@@ -1,12 +1,20 @@
 <aside class="sidebar" id="sidebar">
-   <nav class="sidebar__nav">
-      <ul class="menu">
-         <li class="menu__header">
-            <img src="/build/img/logo-acis-blanco.webp" alt="Logo Acis" class="menu__logo">
+   <nav class="sidebar__nav" id="menu">
+      <div class="sidebar__header">
+         <div class="sidebar__logo">
+            <a href="/admin/dashboard">
+               <img src="/build/img/logo.svg" alt="Logo Acis" class="menu__logo">
+            </a>
             <button class="menu__close">
                <i class="fa-solid fa-xmark"></i>
             </button>
-         </li>
+         </div>
+         <div class="sidebar__user">
+            <div class="sidebar__user--avatar">NH</div>
+            <div class="sidebar__user--nombre">Nelson Huaman <span>Administrador</span></div>
+         </div>
+      </div>
+      <ul class="sidebar__menu menu">
          <li class="menu__item <?php echo paginaActual('dashboard') ? 'menu__activo' : ''; ?>">
             <a href="/admin/dashboard" class="menu__enlace">
                <i class="fa-solid fa-house"></i>
@@ -51,28 +59,16 @@
                <span class="menu__nombre">Documentación</span>
             </a>
          </li>
-         <li class="menu__footer">
-            <nav class="menu-redes">
-               <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://acis.edu.pe/">
-                  <span class="menu-redes__ocultar">Sitio Web</span>
-               </a>
-               <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://acis.pe/">
-                  <span class="menu-redes__ocultar">Aula Virtual</span>
-               </a>
-               <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/acisespecializacion/">
-                  <span class="menu-redes__ocultar">Facebook</span>
-               </a>
-               <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/@ACISESPECIALIZACION">
-                  <span class="menu-redes__ocultar">YouTube</span>
-               </a>
-               <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/acis_especializacion/">
-                  <span class="menu-redes__ocultar">Instagram</span>
-               </a>
-               <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://www.tiktok.com/@acis.especializacion">
-                  <span class="menu-redes__ocultar">Tiktok</span>
-               </a>
-            </nav>
-         </li>
       </ul>
+      <div class="sidebar__footer">
+         <a href="/" class="sidebar__enlace" target="_blank">
+            <i class="fa-solid fa-share-from-square"></i>
+            Web
+         </a>
+         <a href="/salir" class="sidebar__enlace">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Salir
+         </a>
+      </div>
    </nav>
 </aside>
