@@ -3,7 +3,7 @@
 
 .menu {
    overflow-y: scroll;
-   background-color: v.$fondo;
+   
    @include m.lista;
 
    &__item {

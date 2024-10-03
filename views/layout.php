@@ -4,16 +4,16 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-   <title><?php echo $page_name ?? ''; ?> | Nelson</title>
-   <meta name="description" content="<?php echo $page_description ?? ''; ?>">
+   <title><?php echo $title ?? ''; ?> | Nelson</title>
+   <meta name="description" content="<?php echo $description ?? ''; ?>">
    <link rel="canonical" href="https://nelsondev.info/" >
 
    <meta property="og:type" content="website">
    <meta property="og:site_name" content="Nelson">
-   <meta property="og:title" content="<?php echo $page_name ?? ''; ?> | Nelson">
-   <meta property="og:description" content="<?php echo $page_description ?? ''; ?>">
-   <meta property="og:image" content="<?php echo $page_image ?? ''; ?>">
-   <meta property="og:url" content="https://nelsondev.info/<?php echo $page_slug ?? ''; ?>">
+   <meta property="og:title" content="<?php echo $title ?? ''; ?> | Nelson">
+   <meta property="og:description" content="<?php echo $description ?? ''; ?>">
+   <meta property="og:image" content="<?php echo $image ?? ''; ?>">
+   <meta property="og:url" content="https://nelsondev.info<?php echo $slug ?? ''; ?>">
 
    <link rel="icon" type="image/svg+xml" href="/build/img/isotipo.svg">
    <link rel="preconnect" href="https://fonts.googleapis.com">

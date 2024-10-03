@@ -1,5 +1,6 @@
 <main class="main">
    <div class="main__contenedor">
+      <h1 class="main__titulo"><?php echo $title; ?></h1>
       <div class="main__post">
          <div class="blog">
             <img class="blog__imagen" src="/build/img/responsive.webp" alt="">

@@ -1,7 +1,7 @@
 <section class="seccion seccion--grafico">
    <div class="seccion__contenedor">
       <h2 class="seccion__titulo">Bienvenido al mundo</h2>
-      <p class="seccion__descripcion">Soy un joven entusiasta de la tecnología y emprendedor al que le encanta correr riesgos. Crecí en una familia tecnológica en la ciudad de Lima.</p>
+      <p class="seccion__descripcion">Desarrollador web en PHP, JavaScript, SASS, WordPress, React y Node.js. Me especializo en crear aplicaciones web dinámicas y responsivas, optimizando la experiencia del usuario.</p>
       <div class="herramienta">
          <div class="herramienta__item">
             <div class="herramienta__div"></div>
@@ -26,6 +26,66 @@
                <h3 class="herramienta__h3">Google Analytics</h3>
                <p class="herramienta__texto">Herramienta que permite analizar el tráfico y comportamiento en sitios web.</p>
             </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="seccion seccion--grafico">
+   <div class="seccion__contenedor">
+      <h2 class="seccion__titulo">Mis proyectos</h2>
+      <p class="seccion__descripcion">He implementado soluciones responsivas, optimizado el SEO y mejorado la experiencia del usuario, utilizando tecnologías como HTML, CSS, JavaScript y frameworks como React y Node.js.</p>
+      <div class="proyectos">
+         <div class="proyectos__item">
+            <picture>
+               <source srcset="/build/img/responsive.webp" type="image/webp">
+               <source srcset="/build/img/responsive.avif" type="image/avif">
+               <source srcset="/build/img/responsive.png" type="image/png">
+               <img class="proyectos__imagen" loading="lazy" width="200" height="300" src="/build/img/responsive.png" alt="Imagen Ponente">
+            </picture>
+            <h3 class="proyectos__h3">Web - Nelson</h3>
+            <ul class="tecnologia">
+               <li class="tecnologia__li html5">HTML5</li>
+               <li class="tecnologia__li css">CSS</li>
+               <li class="tecnologia__li js">JS</li>
+               <li class="tecnologia__li sass">SASS</li>
+            </ul>
+            <p class="proyectos__texto">Página web optimizado para motores de busqueda</p>
+            <a href="/proyecto/proyecto-01" class="proyectos__boton">Más Información</a>
+         </div>
+         <div class="proyectos__item">
+            <picture>
+               <source srcset="/build/img/responsive.webp" type="image/webp">
+               <source srcset="/build/img/responsive.avif" type="image/avif">
+               <source srcset="/build/img/responsive.png" type="image/png">
+               <img class="proyectos__imagen" loading="lazy" width="200" height="300" src="/build/img/responsive.png" alt="Imagen Ponente">
+            </picture>
+            <h3 class="proyectos__h3">Web - Nelson</h3>
+            <ul class="tecnologia">
+               <li class="tecnologia__li html5">HTML5</li>
+               <li class="tecnologia__li css">CSS</li>
+               <li class="tecnologia__li js">JS</li>
+               <li class="tecnologia__li sass">SASS</li>
+            </ul>
+            <p class="proyectos__texto">Página web optimizado para motores de busqueda</p>
+            <a href="/proyecto/proyecto-01" class="proyectos__boton">Más Información</a>
+         </div>
+         <div class="proyectos__item">
+            <picture>
+               <source srcset="/build/img/responsive.webp" type="image/webp">
+               <source srcset="/build/img/responsive.avif" type="image/avif">
+               <source srcset="/build/img/responsive.png" type="image/png">
+               <img class="proyectos__imagen" loading="lazy" width="200" height="300" src="/build/img/responsive.png" alt="Imagen Ponente">
+            </picture>
+            <h3 class="proyectos__h3">Web - Nelson</h3>
+            <ul class="tecnologia">
+               <li class="tecnologia__li html5">HTML5</li>
+               <li class="tecnologia__li css">CSS</li>
+               <li class="tecnologia__li js">JS</li>
+               <li class="tecnologia__li sass">SASS</li>
+            </ul>
+            <p class="proyectos__texto">Página web optimizado para motores de busqueda</p>
+            <a href="/proyecto/proyecto-01" class="proyectos__boton">Más Información</a>
          </div>
       </div>
    </div>
@@ -67,7 +127,7 @@
 <section class="seccion seccion--grafico">
    <div class="seccion__contenedor">
       <h2 class="seccion__titulo">Mi blog</h2>
-      <p class="seccion__descripcion">Desarrollador web con experiencia en diseño, implementación y optimización de sitios y aplicaciones. Experto en HTML, CSS, JavaScript.</p>
+      <p class="seccion__descripcion">Comparto experiencias y tutoriales sobre desarrollo web utilizando PHP, JavaScript, SASS, WordPress, React y Node.js. Exploro técnicas, mejores prácticas y herramientas para crear sitios dinámicos y responsivos.</p>
       <div class="blogs blogs--inicio">
          <div class="blogs__item">
             <img src="https://canto-wp-media.s3.amazonaws.com/app/uploads/2019/07/19194417/insert-image-html.jpg" alt="Iamgen" class="blogs__imagen">
@@ -131,66 +191,6 @@
                   Seguir Leyendo
                </a>
             </div>
-         </div>
-      </div>
-   </div>
-</section>
-
-<section class="seccion seccion--grafico">
-   <div class="seccion__contenedor">
-      <h2 class="seccion__titulo">Mis proyectos</h2>
-      <p class="seccion__descripcion">Pero si el dolor de la ira está en la reprensión, son cegados por el deseo,no salen, están en quien eso es.</p>
-      <div class="proyectos">
-         <div class="proyectos__item">
-            <picture>
-               <source srcset="/build/img/responsive.webp" type="image/webp">
-               <source srcset="/build/img/responsive.avif" type="image/avif">
-               <source srcset="/build/img/responsive.png" type="image/png">
-               <img class="proyectos__imagen" loading="lazy" width="200" height="300" src="/build/img/responsive.png" alt="Imagen Ponente">
-            </picture>
-            <h3 class="proyectos__h3">Web - Nelson</h3>
-            <ul class="tecnologia">
-               <li class="tecnologia__li html5">HTML5</li>
-               <li class="tecnologia__li css">CSS</li>
-               <li class="tecnologia__li js">JS</li>
-               <li class="tecnologia__li sass">SASS</li>
-            </ul>
-            <p class="proyectos__texto">Página web optimizado para motores de busqueda</p>
-            <a href="/proyecto/proyecto-01" class="proyectos__boton">Más Información</a>
-         </div>
-         <div class="proyectos__item">
-            <picture>
-               <source srcset="/build/img/responsive.webp" type="image/webp">
-               <source srcset="/build/img/responsive.avif" type="image/avif">
-               <source srcset="/build/img/responsive.png" type="image/png">
-               <img class="proyectos__imagen" loading="lazy" width="200" height="300" src="/build/img/responsive.png" alt="Imagen Ponente">
-            </picture>
-            <h3 class="proyectos__h3">Web - Nelson</h3>
-            <ul class="tecnologia">
-               <li class="tecnologia__li html5">HTML5</li>
-               <li class="tecnologia__li css">CSS</li>
-               <li class="tecnologia__li js">JS</li>
-               <li class="tecnologia__li sass">SASS</li>
-            </ul>
-            <p class="proyectos__texto">Página web optimizado para motores de busqueda</p>
-            <a href="/proyecto/proyecto-01" class="proyectos__boton">Más Información</a>
-         </div>
-         <div class="proyectos__item">
-            <picture>
-               <source srcset="/build/img/responsive.webp" type="image/webp">
-               <source srcset="/build/img/responsive.avif" type="image/avif">
-               <source srcset="/build/img/responsive.png" type="image/png">
-               <img class="proyectos__imagen" loading="lazy" width="200" height="300" src="/build/img/responsive.png" alt="Imagen Ponente">
-            </picture>
-            <h3 class="proyectos__h3">Web - Nelson</h3>
-            <ul class="tecnologia">
-               <li class="tecnologia__li html5">HTML5</li>
-               <li class="tecnologia__li css">CSS</li>
-               <li class="tecnologia__li js">JS</li>
-               <li class="tecnologia__li sass">SASS</li>
-            </ul>
-            <p class="proyectos__texto">Página web optimizado para motores de busqueda</p>
-            <a href="/proyecto/proyecto-01" class="proyectos__boton">Más Información</a>
          </div>
       </div>
    </div>

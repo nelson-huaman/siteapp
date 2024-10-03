@@ -1,5 +1,6 @@
 <main class="main">
    <div class="main__contenedor">
+      <h1 class="main__titulo"><?php echo $title; ?></h1>
       <div class="main__grid">
          <form action="" class="formulario">
             <fieldset class="formulario__fieldset">

@@ -4,7 +4,7 @@
 .dashboard {
    height: 100%;
    display: flex;
-   background-color: adjust-color(v.$gris, $lightness: 6%);
+   background-color: adjust-color(v.$fondo, $lightness: 9%);
 
    &__grid {
       display: flex;
@@ -16,10 +16,10 @@
    &__header {
       padding: 1rem 2rem;
       position: sticky;
-      background-color: adjust-color(v.$gris, $lightness: 6%);
+      background-color: adjust-color(v.$fondo, $lightness: 6%);
       top: 0;
-      color: v.$negro;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      // color: v.$negro;
+      box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -59,12 +59,13 @@
       // margin: 1rem 0;
       font-size: 2rem;
       text-align: center;
-      color: v.$fondo;
+      // color: v.$fondo;
    }
 
    &__contenido {
       padding: 1rem 2rem;
       width: 100%;
+      height: 100%;
       overflow-y: scroll;
    }
 

@@ -1,1 +1,1 @@
-<h2 class="dashboard__h2"><?php echo $titulo; ?></h2>
+<h2 class="dashboard__h2"><?php echo $title; ?></h2>

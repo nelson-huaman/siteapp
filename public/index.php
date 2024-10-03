@@ -18,7 +18,6 @@ $router->get('/contacto', [PaginaController::class, 'contacto']);
 
 $router->get('/proyecto/proyecto-01', [PaginaController::class, 'proyecto']);
 $router->get('/blog/blog-01', [PaginaController::class, 'blog']);
-$router->get('/404', [PaginaController::class, 'error']);
 
 
 $router->get('/login', [LoginController::class, 'index']);
@@ -28,7 +27,8 @@ $router->get('/salir', [LoginController::class, 'salir']);
 // Administrador
 $router->get('/admin/dashboard', [DashboardController::class, 'index']);
 
-
-$router->get('/admin/404', [DashboardController::class, 'error']);
+// Página no encontrado 
+$router->get('/admin/404', [PaginaController::class, 'error']);
+$router->get('/404', [PaginaController::class, 'error']);
 
 $router->rutas();

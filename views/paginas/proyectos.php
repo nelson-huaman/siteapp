@@ -1,5 +1,6 @@
 <main class="main">
    <div class="main__contenedor">
+      <h1 class="main__titulo"><?php echo $title; ?></h1>
       <div class="proyectos">
          <div class="proyectos__item">
             <picture>

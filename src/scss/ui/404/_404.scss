@@ -2,29 +2,33 @@
 @use 'base/mixins' as m;
 
 .error-404 {
-   // background-color: v.$fondo;
-
    display: flex;
-   flex: 1;
-   flex-direction: column;
    justify-content: center;
+   align-items: center;
    height: 100%;
 
    &__contenedor {
       text-align: center;
+      margin: 5rem;
    }
 
    &__imagen {
-      max-width: 45rem;
+      max-width: 35rem;
    }
 
-   &__h2 {
+   &__titulo {
       margin: 0;
-      font-size: 5rem;
+      font-size: 8rem;
+      line-height: 1;
    }
 
    &__texto {
       color: v.$color;
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: v.$bold;
+      line-height: 1;
+      margin: 0 0 2rem 0 ;
    }
 
    &__enlace {
