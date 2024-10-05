@@ -25,10 +25,10 @@
    }
 }
 
-@mixin boton($bgColor, $colorTexto) {
-   background-color: adjust-color($bgColor, $lightness: -15%);
+@mixin boton($fondo, $color) {
+   background-color: adjust-color($fondo, $lightness: -20%);
    padding: 1.5rem 4rem;
-   color: $colorTexto;
+   color: $color;
    font-size: 1.8rem;
    font-weight: v.$bold;
    border: none;
@@ -36,12 +36,12 @@
    transition-duration: .3s;
    text-align: center;
    width: 100%;
-   border-radius: .5rem;
+   border-radius: .6rem;
    display: inline-block;
    text-transform: uppercase;
 
    &:hover {
-      background-color: adjust-color($bgColor, $lightness: -25%);
+      background-color: adjust-color($fondo, $lightness: -25%);
       cursor: pointer;
    }
 }

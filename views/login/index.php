@@ -1,4 +1,5 @@
 <main class="login">
+   <h1 class="login__titulo">Iniciar Sesión</h1>
    <?php require_once __DIR__ . '/../templates/alertas.php'; ?>
    <form action="/login" method="post" class="formulario">
       <fieldset class="formulario__fieldset">

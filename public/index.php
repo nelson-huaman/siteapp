@@ -1,8 +1,11 @@
 <?php
 
+use Controllers\BlogController;
 use Controllers\DashboardController;
 use Controllers\LoginController;
+use Controllers\MensajeController;
 use Controllers\PaginaController;
+use Controllers\ProyectoController;
 use MVC\Router;
 
 require_once __DIR__ . '/../config/app.php';
@@ -22,13 +25,19 @@ $router->get('/blog/blog-01', [PaginaController::class, 'blog']);
 
 $router->get('/login', [LoginController::class, 'index']);
 $router->post('/login', [LoginController::class, 'index']);
-$router->get('/salir', [LoginController::class, 'salir']);
+$router->post('/salir', [LoginController::class, 'salir']);
 
 // Administrador
 $router->get('/admin/dashboard', [DashboardController::class, 'index']);
+$router->get('/admin/proyectos', [ProyectoController::class, 'index']);
+$router->get('/admin/blogs', [BlogController::class, 'index']);
+$router->get('/admin/blogs/categorias', [BlogController::class, 'categoria']);
+$router->get('/admin/mensajes', [MensajeController::class, 'index']);
 
-// Página no encontrado 
-$router->get('/admin/404', [PaginaController::class, 'error']);
+
+
+// Página no encontrado
+$router->get('/admin/404', [DashboardController::class, 'error']);
 $router->get('/404', [PaginaController::class, 'error']);
 
 $router->rutas();

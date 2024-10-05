@@ -2,34 +2,42 @@
 @use 'base/mixins' as m;
 
 .menu {
-   overflow-y: scroll;
-   
    @include m.lista;
 
    &__item {
-      padding: 1.5rem 1rem;
-
+      padding: 1.2rem 2rem;
+      
       i {
          width: 1.8rem;
          text-align: center;
       }
 
-      &:hover {
-         cursor: pointer;
-         background-color: adjust-color(v.$fondo, $lightness: 6%);
-         transition: background-color .5s ease;
+      &--sub {
+         margin-top: 1rem;
+         i {
+            width: auto;
+         }
       }
 
+      &:hover {
+         cursor: pointer;
+         background-color: adjust-color(v.$color, $lightness: -20%);
+         transition: background-color .5s ease;
+         color: v.$blanco;
+
+         .menu__enlace {
+            color: v.$blanco;
+         }
+      }
    }
 
    &__enlace {
-      color: adjust-color(v.$fondo, $lightness: 75%);
+      color: adjust-color(v.$fondo, $lightness: 70%);
       font-weight: v.$medium;
       white-space: nowrap;
       display: flex;
       flex-direction: row;
       align-items: center;
-      line-height: 1.2;
       gap: 1rem;
    }
 
@@ -51,8 +59,27 @@
 
    &__submenu {
       @include m.lista;
+      display: none;
       padding-left: 2rem;
       font-size: 1.2rem;
-      display: none;
    }
+
+   &__activo {
+      background-color: adjust-color(v.$color, $lightness: -20%);
+
+      .menu__enlace {
+         color: v.$blanco;
+      }
+
+      .menu__submenu {
+         display: block;
+      }
+
+      .menu__icono {
+         &::after {
+            rotate: 50grad;
+         }
+      }
+   }
+
 }

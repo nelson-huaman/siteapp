@@ -21,6 +21,10 @@ class LoginController {
             } else {
                if(password_verify($_POST['password'], $usuario->password)) {
                   session_start();
+                  $_SESSION['id'] = $usuario->id;
+                  $_SESSION['nombre'] = $usuario->nombre;
+                  $_SESSION['apellido'] = $usuario->apellidoPaterno;
+                  $_SESSION['admin'] = $usuario->admin ?? null;
 
                   if($usuario->admin) {
                      header('Location: /admin/dashboard');
@@ -43,7 +47,11 @@ class LoginController {
    }
 
    public static function salir() {
-      
+      if($_SERVER['REQUEST_METHOD'] === 'POST') {
+         session_start();
+         $_SESSION = [];
+         header('Location: /');
+      }
    }
 
 }

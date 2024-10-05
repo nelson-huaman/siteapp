@@ -1,0 +1,86 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.barra {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 2rem;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+   @include m.sombra;
+
+   &__menu {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+   }
+
+   &__open-mobil,
+   &__open-pc {
+      @include m.enlace;
+      font-size: 2rem;
+
+      &:hover {
+         color: v.$color;
+      }
+   }
+
+   &__open-mobil {
+      @include m.desktop {
+         display: none;
+      }
+   }
+
+   &__open-pc {
+      visibility: hidden;
+      @include m.desktop {
+         visibility: visible;
+      }
+   }
+
+   &__titulo {
+      color: v.$blanco;
+      font-weight: v.$medium;
+   }
+
+   &__aviso {
+      @include m.lista;
+      display: flex;
+      gap: 1.5rem;
+   }
+
+   &__enlace {
+      @include m.enlace;
+      font-size: 1.8rem;
+      display: flex;
+
+      span {
+         width: 1.3rem;
+         height: 1.3rem;
+         border-radius: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: adjust-color(v.$error, $lightness: -5%);
+         color: v.$blanco;
+         font-size: 1rem;
+         font-weight: v.$medium;
+      }
+
+      &:hover {
+         color: v.$color;
+      }
+   }
+
+   &__item {
+      &--expandir {
+         display: none;
+
+         @include m.desktop {
+            display: block;
+         }
+      }
+   }
+}

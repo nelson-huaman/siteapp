@@ -15,9 +15,7 @@
 
       <?php include_once __DIR__ .'/templates/admin-sidebar.php'; ?>
       <div class="dashboard__grid">
-         <div class="dashboard__header">
-            <?php include_once __DIR__ .'/templates/barra.php'; ?>
-         </div>
+         <?php include_once __DIR__ .'/templates/barra.php'; ?>
          <main class="dashboard__contenido">
             <?php echo $contenido; ?> 
          </main>

@@ -10,26 +10,17 @@
       const noTransition = "no-transition"
       let resize;
       
-      openMenu.addEventListener("click", () => {
-         navegacion.classList.add(showMenu)
-      })
-
-      closeMenu.addEventListener("click", () => {
-         navegacion.classList.remove(showMenu)
-      })
+      openMenu.addEventListener("click", () => navegacion.classList.add(showMenu) );
+      closeMenu.addEventListener("click", () =>  navegacion.classList.remove(showMenu) );
 
       window.addEventListener("resize", () => {
-         header.querySelectorAll("*").forEach(function(el) {
-            el.classList.add(noTransition)
-         })
+         header.querySelectorAll("*").forEach( item => item.classList.add(noTransition) )
          clearInterval(resize)
          resize = setTimeout(resizingComplete, 500)
       })
 
       function resizingComplete() {
-         header.querySelectorAll("*").forEach(function(el) {
-            el.classList.remove(noTransition)
-         })
+         header.querySelectorAll("*").forEach(item => item.classList.remove(noTransition) );
       }
    }
 })();
