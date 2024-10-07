@@ -2,20 +2,25 @@
 @use 'base/mixins' as m;
 
 .proyectos {
-   @include m.grid(1, 3rem);
+   @include m.contenedor;
 
-   @include m.tablet {
-      @include m.grid(2, 3rem);
-   }
+   &__grid {
+      @include m.grid(1, 3rem);
 
-   @include m.desktop {
-      @include m.grid(3, 3rem);
+      @include m.tablet {
+         @include m.grid(2, 3rem);
+      }
+
+      @include m.desktop {
+         @include m.grid(3, 3rem);
+      }
    }
 
    &__item {
       padding: 2rem;
       border-radius: 1rem;
       background-color: adjust-color(v.$fondo, $lightness: 1%);
+      text-align: center;
       @include m.sombra;
 
       &:hover {
