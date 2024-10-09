@@ -1,5 +1,6 @@
 <?php
 
+use Controllers\BlogCategoriaController;
 use Controllers\BlogController;
 use Controllers\DashboardController;
 use Controllers\LoginController;
@@ -31,7 +32,16 @@ $router->post('/salir', [LoginController::class, 'salir']);
 $router->get('/admin/dashboard', [DashboardController::class, 'index']);
 $router->get('/admin/proyectos', [ProyectoController::class, 'index']);
 $router->get('/admin/blogs', [BlogController::class, 'index']);
-$router->get('/admin/blogs/categorias', [BlogController::class, 'categoria']);
+$router->get('/admin/blogs/crear', [BlogController::class, 'crear']);
+$router->post('/admin/blogs/crear', [BlogController::class, 'crear']);
+$router->get('/admin/blogs/categorias', [BlogCategoriaController::class, 'index']);
+$router->get('/admin/blogs/categorias/crear', [BlogCategoriaController::class, 'crear']);
+$router->post('/admin/blogs/categorias/crear', [BlogCategoriaController::class, 'crear']);
+$router->get('/admin/blogs/categorias/editar', [BlogCategoriaController::class, 'editar']);
+$router->post('/admin/blogs/categorias/editar', [BlogCategoriaController::class, 'editar']);
+$router->post('/admin/blogs/categorias/estado', [BlogCategoriaController::class, 'estado']);
+$router->post('/admin/blogs/categorias/eliminar', [BlogCategoriaController::class, 'eliminar']);
+
 $router->get('/admin/mensajes', [MensajeController::class, 'index']);
 
 

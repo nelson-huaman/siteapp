@@ -19,17 +19,17 @@ class Usuario extends ActiveRecord {
    public $admin;
    public $estado;
 
-   public function __construct($arreglo = []) {
-      $this->id = $arreglo['id'] ?? null;
-      $this->nombre = $arreglo['nombre'] ?? '';
-      $this->apellidoPaterno = $arreglo['apellidoPaterno'] ?? '';
-      $this->apellidoMaterno = $arreglo['apellidoMaterno'] ?? '';
-      $this->email = $arreglo['email'] ?? '';
-      $this->password = $arreglo['password'] ?? '';
-      $this->confirmado = $arreglo['confirmado'] ?? 0;
-      $this->token = $arreglo['token'] ?? '';
-      $this->admin = $arreglo['admin'] ?? 0;
-      $this->estado = $arreglo['estado'] ?? 0;
+   public function __construct($args = []) {
+      $this->id = $args['id'] ?? null;
+      $this->nombre = $args['nombre'] ?? '';
+      $this->apellidoPaterno = $args['apellidoPaterno'] ?? '';
+      $this->apellidoMaterno = $args['apellidoMaterno'] ?? '';
+      $this->email = $args['email'] ?? '';
+      $this->password = $args['password'] ?? '';
+      $this->confirmado = $args['confirmado'] ?? 0;
+      $this->token = $args['token'] ?? '';
+      $this->admin = $args['admin'] ?? 0;
+      $this->estado = $args['estado'] ?? 0;
    }
 
    public function validarLogin() : array {

@@ -3,9 +3,7 @@
    <div class="sidebar__nav">
       <div class="sidebar__header">
          <div class="sidebar__head">
-            <a href="#">
-               <img class="sidebar__logo" src="/build/img/logo.svg" alt="Logo Acis" width="1280" height="720">
-            </a>
+            <img class="sidebar__logo" src="/build/img/logo.svg" alt="Logo Acis" width="1280" height="720">
             <button class="sidebar__close"><i class="fa-solid fa-xmark"></i></button>
          </div>
          <div class="sidebar__user">

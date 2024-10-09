@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('America/Lima');
+
 function debuguear($variable) : string {
    echo '<pre>';
    var_dump($variable);
@@ -10,6 +12,23 @@ function debuguear($variable) : string {
 function stringHTML($html) : string {
    $sanitizado = htmlspecialchars($html);
    return $sanitizado;
+}
+
+function generarSlug($slug) {
+   $caracteres = [
+      'á' => 'a', 'Á' => 'A', 
+      'é' => 'e', 'É' => 'E',
+      'í' => 'i', 'Í' => 'I',
+      'ó' => 'o', 'Ó' => 'O',
+      'ú' => 'u', 'Ú' => 'U',
+      'ñ' => 'n', 'Ñ' => 'N'
+   ];
+  
+  $slug = strtr($slug, $caracteres);
+  $slug = strtolower($slug);
+  $url = str_replace(' ', '-', $slug);
+  $url = preg_replace('/[^a-z0-9\-]/', '', $url);
+  return $url;
 }
 
 function paginaActual($path) : bool {

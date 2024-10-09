@@ -55,7 +55,7 @@ class ActiveRecord {
       $atributos = $this->sanitizarAtributos();
       $query = "INSERT INTO " . static::$tabla . " (";
       $query .= join(', ', array_keys($atributos));
-      $query .= ") VALUES (' ";
+      $query .= ") VALUES ('";
       $query .= join("', '", array_values($atributos));
       $query .= "')";
       $resultado = self::$db->query($query);

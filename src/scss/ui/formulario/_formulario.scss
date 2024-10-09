@@ -4,6 +4,13 @@
 .formulario {
    display: flex;
    flex-direction: column;
+   gap: 2.5rem;
+
+   &--post {
+      @include m.desktop {
+         flex-direction: row;
+      }
+   }
    
    &__fieldset {
       all: unset;
@@ -13,9 +20,11 @@
    }
 
    &__legend {
-      font-size: 2.5rem;
-      margin-bottom: 1.5rem;
-      font-weight: v.$bold;
+      font-size: 2rem;
+      margin-bottom: 1.8rem;
+      font-weight: v.$medium;
+      width: 100%;
+      text-align: center;
    }
 
    &__colunm {
@@ -43,7 +52,6 @@
    &__select {
       all: unset;
       padding: 1rem;
-      // border: 1px solid lighten(v.$dark, 50%);
       border: 1px solid adjust-color(v.$fondo, $lightness: 75%);;
       border-radius: .6rem;
       box-sizing: border-box;
@@ -51,16 +59,40 @@
       text-align: left;
    }
 
+   &__accion {
+      text-align: center;
+   }
+
    &__submit {
       @include m.boton(v.$color, v.$blanco);
       & {
-         margin-top: 2rem;
          box-sizing: border-box;
+         
+         @include m.tablet {
+            width: auto;
+         }
       }
 
       &--registrar,
       &--full {
          width: 100%;
       }
+   }
+
+   // Post
+   &__contenido {
+      flex: 1;
+      background-color: v.$fondo;
+      padding: 2rem;
+   }
+
+   &__sidebar {
+      width: 35rem;
+      
+   }
+
+   &__publicar {
+      padding: 2rem;
+      background-color: v.$fondo;
    }
 }

@@ -2,29 +2,44 @@
 @use 'base/mixins' as m;
 
 .blog {
-   gap: 2rem;
+   @include m.contenedor;
 
-   @include m.desktop {
-      align-items: start;
+   &__flex {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      @include m.desktop {
+         flex-direction: row;
+      }
    }
 
-   @include m.desktop {
-      flex-direction: row;
+   &__contenido {
+      flex: 1;
    }
 
    &__imagen {
       @include m.sombraImagen;
-      width: 100%;
-   }
-
-   &__texto {
-      text-align: justify;
+      border-radius: 1rem;
    }
 
    &__header {
       display: flex;
       gap: 2rem;
       align-items: center;
+   }
+
+   &__texto {
+      text-align: justify;
+   }
+
+
+   &__sidebar {
+      width: 100%;
+
+      @include m.desktop {
+         width: 35rem;
+      }
    }
 
    &__h2 {
@@ -53,7 +68,7 @@
       }
    }
 
-   .menu-redes {
-      margin: 0;
-   }
+   // .menu-redes {
+   //    margin: 0;
+   // }
 }

@@ -8,8 +8,7 @@
                   <label for="email" class="formulario__label">Correo</label>
                   <input
                      type="email" name="email" id="email"
-                     placeholder="Correo"
-                     value=""
+                     value="" placeholder="Correo"
                      class="formulario__input"
                   >
                </div>
@@ -17,8 +16,7 @@
                   <label for="password" class="formulario__label">Contraseña</label>
                   <input
                      type="password" name="password" id="password"
-                     placeholder="Contraseña"
-                     value=""
+                     value="" placeholder="Contraseña"
                      class="formulario__input"
                   >
                </div>

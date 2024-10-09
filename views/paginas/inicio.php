@@ -36,57 +36,59 @@
       <h2 class="seccion__titulo">Mis proyectos</h2>
       <p class="seccion__descripcion">He implementado soluciones responsivas, optimizado el SEO y mejorado la experiencia del usuario, utilizando tecnologías como HTML, CSS, JavaScript y frameworks como React y Node.js.</p>
       <div class="proyectos">
-         <div class="proyectos__item">
-            <picture>
-               <source srcset="/build/img/responsive.webp" type="image/webp">
-               <source srcset="/build/img/responsive.avif" type="image/avif">
-               <source srcset="/build/img/responsive.png" type="image/png">
-               <img class="proyectos__imagen" loading="lazy" width="200" height="300" src="/build/img/responsive.png" alt="Imagen Ponente">
-            </picture>
-            <h3 class="proyectos__h3">Web - Nelson</h3>
-            <ul class="tecnologia">
-               <li class="tecnologia__li html5">HTML5</li>
-               <li class="tecnologia__li css">CSS</li>
-               <li class="tecnologia__li js">JS</li>
-               <li class="tecnologia__li sass">SASS</li>
-            </ul>
-            <p class="proyectos__texto">Página web optimizado para motores de busqueda</p>
-            <a href="/proyecto/proyecto-01" class="proyectos__boton">Más Información</a>
-         </div>
-         <div class="proyectos__item">
-            <picture>
-               <source srcset="/build/img/responsive.webp" type="image/webp">
-               <source srcset="/build/img/responsive.avif" type="image/avif">
-               <source srcset="/build/img/responsive.png" type="image/png">
-               <img class="proyectos__imagen" loading="lazy" width="200" height="300" src="/build/img/responsive.png" alt="Imagen Ponente">
-            </picture>
-            <h3 class="proyectos__h3">Web - Nelson</h3>
-            <ul class="tecnologia">
-               <li class="tecnologia__li html5">HTML5</li>
-               <li class="tecnologia__li css">CSS</li>
-               <li class="tecnologia__li js">JS</li>
-               <li class="tecnologia__li sass">SASS</li>
-            </ul>
-            <p class="proyectos__texto">Página web optimizado para motores de busqueda</p>
-            <a href="/proyecto/proyecto-01" class="proyectos__boton">Más Información</a>
-         </div>
-         <div class="proyectos__item">
-            <picture>
-               <source srcset="/build/img/responsive.webp" type="image/webp">
-               <source srcset="/build/img/responsive.avif" type="image/avif">
-               <source srcset="/build/img/responsive.png" type="image/png">
-               <img class="proyectos__imagen" loading="lazy" width="200" height="300" src="/build/img/responsive.png" alt="Imagen Ponente">
-            </picture>
-            <h3 class="proyectos__h3">Web - Nelson</h3>
-            <ul class="tecnologia">
-               <li class="tecnologia__li html5">HTML5</li>
-               <li class="tecnologia__li css">CSS</li>
-               <li class="tecnologia__li js">JS</li>
-               <li class="tecnologia__li sass">SASS</li>
-            </ul>
-            <p class="proyectos__texto">Página web optimizado para motores de busqueda</p>
-            <a href="/proyecto/proyecto-01" class="proyectos__boton">Más Información</a>
-         </div>
+         <div class="proyectos__grid">
+            <div class="proyectos__item">
+               <picture>
+                  <source srcset="/build/img/responsive.webp" type="image/webp">
+                  <source srcset="/build/img/responsive.avif" type="image/avif">
+                  <source srcset="/build/img/responsive.png" type="image/png">
+                  <img class="proyectos__imagen" loading="lazy" width="200" height="300" src="/build/img/responsive.png" alt="Imagen Ponente">
+               </picture>
+               <h3 class="proyectos__h3">Web - Nelson</h3>
+               <ul class="tecnologia">
+                  <li class="tecnologia__li html5">HTML5</li>
+                  <li class="tecnologia__li css">CSS</li>
+                  <li class="tecnologia__li js">JS</li>
+                  <li class="tecnologia__li sass">SASS</li>
+               </ul>
+               <p class="proyectos__texto">Página web optimizado para motores de busqueda</p>
+               <a href="/proyecto/proyecto-01" class="proyectos__boton">Más Información</a>
+            </div>
+            <div class="proyectos__item">
+               <picture>
+                  <source srcset="/build/img/responsive.webp" type="image/webp">
+                  <source srcset="/build/img/responsive.avif" type="image/avif">
+                  <source srcset="/build/img/responsive.png" type="image/png">
+                  <img class="proyectos__imagen" loading="lazy" width="200" height="300" src="/build/img/responsive.png" alt="Imagen Ponente">
+               </picture>
+               <h3 class="proyectos__h3">Web - Nelson</h3>
+               <ul class="tecnologia">
+                  <li class="tecnologia__li html5">HTML5</li>
+                  <li class="tecnologia__li css">CSS</li>
+                  <li class="tecnologia__li js">JS</li>
+                  <li class="tecnologia__li sass">SASS</li>
+               </ul>
+               <p class="proyectos__texto">Página web optimizado para motores de busqueda</p>
+               <a href="/proyecto/proyecto-01" class="proyectos__boton">Más Información</a>
+            </div>
+            <div class="proyectos__item">
+               <picture>
+                  <source srcset="/build/img/responsive.webp" type="image/webp">
+                  <source srcset="/build/img/responsive.avif" type="image/avif">
+                  <source srcset="/build/img/responsive.png" type="image/png">
+                  <img class="proyectos__imagen" loading="lazy" width="200" height="300" src="/build/img/responsive.png" alt="Imagen Ponente">
+               </picture>
+               <h3 class="proyectos__h3">Web - Nelson</h3>
+               <ul class="tecnologia">
+                  <li class="tecnologia__li html5">HTML5</li>
+                  <li class="tecnologia__li css">CSS</li>
+                  <li class="tecnologia__li js">JS</li>
+                  <li class="tecnologia__li sass">SASS</li>
+               </ul>
+               <p class="proyectos__texto">Página web optimizado para motores de busqueda</p>
+               <a href="/proyecto/proyecto-01" class="proyectos__boton">Más Información</a>
+            </div>
+         </div> 
       </div>
    </div>
 </section>
@@ -128,68 +130,76 @@
    <div class="seccion__contenedor">
       <h2 class="seccion__titulo">Mi blog</h2>
       <p class="seccion__descripcion">Comparto experiencias y tutoriales sobre desarrollo web utilizando PHP, JavaScript, SASS, WordPress, React y Node.js. Exploro técnicas, mejores prácticas y herramientas para crear sitios dinámicos y responsivos.</p>
-      <div class="blogs blogs--inicio">
-         <div class="blogs__item">
-            <img src="https://canto-wp-media.s3.amazonaws.com/app/uploads/2019/07/19194417/insert-image-html.jpg" alt="Iamgen" class="blogs__imagen">
-            <div class="blogs__content">
-               <h3 class="blogs__h3">Ampliamente utilizado para el desarrollo web.</h3>
-               <ul class="tag">
-                  <li class="tag__li">
-                     <i class="fa-solid fa-calendar-days"></i>
-                     12. Jul. 2024
-                  </li>
-                  <li class="tag__li">
-                     <i class="fa-solid fa-tag"></i>
-                     PHP
-                  </li>
-               </ul>
-               <p class="blogs__texto">Ampliamente utilizado para el desarrollo web. Permite crear sitios web dinámicos e interactuar con bases de datos.</p>
-               <a href="/blog/blog-01" class="blogs__boton">
-                  <i class="fa-solid fa-angles-right"></i>
-                  Seguir Leyendo
-               </a>
+      <div class="blogs">
+         <div class="blogs__grid blogs__grid--inicio">
+            <div class="blogs__item">
+               <picture>
+                  <source srcset="/build/img/blog.webp" type="image/webp">
+                  <source srcset="/build/img/blog.avif" type="image/avif">
+                  <source srcset="/build/img/blog.png" type="image/png">
+                  <img class="blogs__imagen" loading="lazy" width="200" height="300" src="/build/img/blog.png" alt="Imagen del Blog">
+               </picture>
+               <div class="blogs__info">
+                  <h2 class="blogs__h2">El proceso de desarrollo web: Factores para un desarrollo web exitoso</h2>
+                  <ul class="tag">
+                     <li class="tag__li">
+                        <i class="fa-solid fa-calendar-days"></i> 12. Jul. 2024
+                     </li>
+                     <li class="tag__li">
+                        <i class="fa-solid fa-tag"></i> PHP
+                     </li>
+                  </ul>
+                  <p class="blogs__texto">Ampliamente utilizado para el desarrollo web. Permite crear sitios web dinámicos e interactuar con bases de datos.</p>
+                  <a href="/blog/blog-01" class="blogs__boton">
+                     <i class="fa-solid fa-angles-right"></i> Seguir Leyendo
+                  </a>
+               </div>
             </div>
-         </div>
-         <div class="blogs__item">
-            <img src="https://canto-wp-media.s3.amazonaws.com/app/uploads/2019/07/19194417/insert-image-html.jpg" alt="Iamgen" class="blogs__imagen">
-            <div class="blogs__content">
-               <h3 class="blogs__h3">Ampliamente utilizado para el desarrollo web.</h3>
-               <ul class="tag">
-                  <li class="tag__li">
-                     <i class="fa-solid fa-calendar-days"></i>
-                     12. Jul. 2024
-                  </li>
-                  <li class="tag__li">
-                     <i class="fa-solid fa-tag"></i>
-                     PHP
-                  </li>
-               </ul>
-               <p class="blogs__texto">Ampliamente utilizado para el desarrollo web. Permite crear sitios web dinámicos e interactuar con bases de datos.</p>
-               <a href="/blog/blog-01" class="blogs__boton">
-                  <i class="fa-solid fa-angles-right"></i>
-                  Seguir Leyendo
-               </a>
+            <div class="blogs__item">
+               <picture>
+                  <source srcset="/build/img/blog.webp" type="image/webp">
+                  <source srcset="/build/img/blog.avif" type="image/avif">
+                  <source srcset="/build/img/blog.png" type="image/png">
+                  <img class="blogs__imagen" loading="lazy" width="200" height="300" src="/build/img/blog.png" alt="Imagen del Blog">
+               </picture>
+               <div class="blogs__info">
+                  <h2 class="blogs__h2">El proceso de desarrollo web: Factores para un desarrollo web exitoso</h2>
+                  <ul class="tag">
+                     <li class="tag__li">
+                        <i class="fa-solid fa-calendar-days"></i> 12. Jul. 2024
+                     </li>
+                     <li class="tag__li">
+                        <i class="fa-solid fa-tag"></i> PHP
+                     </li>
+                  </ul>
+                  <p class="blogs__texto">Ampliamente utilizado para el desarrollo web. Permite crear sitios web dinámicos e interactuar con bases de datos.</p>
+                  <a href="/blog/blog-01" class="blogs__boton">
+                     <i class="fa-solid fa-angles-right"></i> Seguir Leyendo
+                  </a>
+               </div>
             </div>
-         </div>
-         <div class="blogs__item">
-            <img src="https://canto-wp-media.s3.amazonaws.com/app/uploads/2019/07/19194417/insert-image-html.jpg" alt="Iamgen" class="blogs__imagen">
-            <div class="blogs__content">
-               <h3 class="blogs__h3">Ampliamente utilizado para el desarrollo web.</h3>
-               <ul class="tag">
-                  <li class="tag__li">
-                     <i class="fa-solid fa-calendar-days"></i>
-                     12. Jul. 2024
-                  </li>
-                  <li class="tag__li">
-                     <i class="fa-solid fa-tag"></i>
-                     PHP
-                  </li>
-               </ul>
-               <p class="blogs__texto">Ampliamente utilizado para el desarrollo web. Permite crear sitios web dinámicos e interactuar con bases de datos.</p>
-               <a href="/blog/blog-01" class="blogs__boton">
-                  <i class="fa-solid fa-angles-right"></i>
-                  Seguir Leyendo
-               </a>
+            <div class="blogs__item">
+               <picture>
+                  <source srcset="/build/img/blog.webp" type="image/webp">
+                  <source srcset="/build/img/blog.avif" type="image/avif">
+                  <source srcset="/build/img/blog.png" type="image/png">
+                  <img class="blogs__imagen" loading="lazy" width="200" height="300" src="/build/img/blog.png" alt="Imagen del Blog">
+               </picture>
+               <div class="blogs__info">
+                  <h2 class="blogs__h2">El proceso de desarrollo web: Factores para un desarrollo web exitoso</h2>
+                  <ul class="tag">
+                     <li class="tag__li">
+                        <i class="fa-solid fa-calendar-days"></i> 12. Jul. 2024
+                     </li>
+                     <li class="tag__li">
+                        <i class="fa-solid fa-tag"></i> PHP
+                     </li>
+                  </ul>
+                  <p class="blogs__texto">Ampliamente utilizado para el desarrollo web. Permite crear sitios web dinámicos e interactuar con bases de datos.</p>
+                  <a href="/blog/blog-01" class="blogs__boton">
+                     <i class="fa-solid fa-angles-right"></i> Seguir Leyendo
+                  </a>
+               </div>
             </div>
          </div>
       </div>

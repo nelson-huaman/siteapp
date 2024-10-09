@@ -9,6 +9,11 @@ class LoginController {
 
    public static function index(Router $router) {
 
+      if(isAdmin()) {
+         header('Location: /admin/dashboard');
+         return;
+      }
+
       $alertas = [];
 
       if($_SERVER['REQUEST_METHOD'] === 'POST') {

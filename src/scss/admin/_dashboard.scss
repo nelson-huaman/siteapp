@@ -18,7 +18,6 @@
       position: sticky;
       background-color: adjust-color(v.$fondo, $lightness: 6%);
       top: 0;
-      // color: v.$negro;
       box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
       display: flex;
       justify-content: space-between;
@@ -56,10 +55,8 @@
    }
 
    &__h2 {
-      // margin: 1rem 0;
       font-size: 2rem;
       text-align: center;
-      // color: v.$fondo;
    }
 
    &__contenido {
@@ -67,6 +64,60 @@
       width: 100%;
       height: 100%;
       overflow-y: scroll;
+   }
+
+   &__contenedor-boton {
+      @include m.tablet {
+         display: flex;
+         justify-content: flex-end;
+         margin-bottom: 2rem;
+      }
+   }
+
+   &__boton {
+      @include m.boton(v.$color, v.$blanco);
+      & {
+         font-size: 1.2rem;
+         padding: 1rem 2rem;
+         margin-bottom: 1rem;
+      }
+
+      i {
+         margin-right: .5rem;
+      }
+
+      @include m.tablet {
+         width: auto;
+      }
+   }
+
+   &__contenedor {
+      @include m.sombra;
+      padding: 1rem;
+      border-radius: 1rem;
+      margin-bottom: 3rem;
+
+      &--tabla {
+         padding: 0;
+         overflow-y: auto;
+         padding-bottom: 1.5rem;
+      }
+
+      &--post {
+         box-shadow: none;
+      }
+   }
+
+   &__formulario {
+      @extend .dashboard__contenedor;
+      background-color: v.$fondo;
+      border-radius: 1rem;
+      padding: 2rem;
+      @include m.sombra;
+
+      @include m.tablet {
+         @include m.contenedorSM;
+      }
    }
 
 }

@@ -9,28 +9,4 @@
       color: v.$color;
       margin: 0 0 3rem 0;
    }
-
-   &__post {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 2rem;
-      position: relative;
-
-      @include m.desktop {
-         flex-direction: row;
-      }
-   }
-
-   &__grid {
-      @include m.grid(1, 3rem);
-      @include m.desktop {
-         @include m.grid(2, 3rem);
-      }
-
-      p {
-         background-color: v.$color;
-         padding: 2rem;
-      }
-   }
 }
