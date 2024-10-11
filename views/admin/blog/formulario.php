@@ -16,5 +16,9 @@
          class="formulario__input" 
       >
    </div>
-   <textarea name="contenido" id="contenido"></textarea>
+   <div class="formulario__row">
+      <label for="contenido" class="formulario__label">Descripción</label>
+      <textarea name="contenido" id="contenido" class="formulario__textarea"></textarea>
+   </div>
+   
 </fieldset>

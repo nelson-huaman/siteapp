@@ -5,10 +5,16 @@
          <span class="menu__nombre">Escritorio</span>
       </a>
    </li>
+   <li class="menu__item <?php echo paginaActual('mensajes') ? 'menu__activo' : ''; ?>">
+      <a href="/admin/paginas" class="menu__enlace">
+         <i class="fa-solid fa-clone"></i>
+         <span class="menu__nombre">Páginas</span>
+      </a>
+   </li>
    <li class="menu__item <?php echo paginaActual('proyectos') ? 'menu__activo' : ''; ?>">
-      <a href="/admin/proyectos" class="menu__enlace">
+      <a href="/admin/portafolio" class="menu__enlace">
          <i class="fa-solid fa-diagram-project"></i>
-         <span class="menu__nombre">Proyectos</span>
+         <span class="menu__nombre">Portafolio</span>
       </a>
    </li>
    <li class="menu__item <?php echo paginaActual('blogs') ? 'menu__activo' : ''; ?>">
@@ -38,8 +44,20 @@
       </a>
    </li>
    <li class="menu__item">
-      <a href="#" class="menu__enlace">
-         <i class="fa-solid fa-house"></i>
+      <a href="/admin/apis" class="menu__enlace">
+         <i class="fa-solid fa-key"></i>
+         <span class="menu__nombre">APIs</span>
+      </a>
+   </li>
+   <li class="menu__item">
+      <a href="/admin/comentarios" class="menu__enlace">
+         <i class="fa-solid fa-comments"></i>
+         <span class="menu__nombre">Comentarios</span>
+      </a>
+   </li>
+   <li class="menu__item">
+      <a href="/admin/documentacion" class="menu__enlace">
+         <i class="fa-solid fa-book"></i>
          <span class="menu__nombre">Documentación</span>
       </a>
    </li>
