@@ -1,8 +1,9 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+@use 'sass:color';
 
 .footer {
-   background-color: adjust-color(v.$fondo, $lightness: -5%);
+   background-color: color.adjust(v.$fondo, $lightness: -5%);
 
    &__contenedor {
       @include m.contenedor;

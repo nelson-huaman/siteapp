@@ -31,6 +31,7 @@ $router->post('/salir', [LoginController::class, 'salir']);
 // Administrador
 $router->get('/admin/dashboard', [DashboardController::class, 'index']);
 $router->get('/admin/proyectos', [ProyectoController::class, 'index']);
+$router->get('/admin/proyecto/crear', [ProyectoController::class, 'crear']);
 $router->get('/admin/blogs', [BlogController::class, 'index']);
 $router->get('/admin/blogs/crear', [BlogController::class, 'crear']);
 $router->post('/admin/blogs/crear', [BlogController::class, 'crear']);

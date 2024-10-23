@@ -1,5 +1,6 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+@use 'sass:color';
 
 .blogs {
    @include m.contenedor;
@@ -36,10 +37,10 @@
    &__item {
       border-radius: 1rem;
       overflow: auto;
-      background-color: adjust-color(v.$fondo, $lightness: 1%);
+      background-color: color.adjust(v.$fondo, $lightness: 1%);
 
       &:hover {
-         background-color: adjust-color(v.$fondo, $lightness: 3%);
+         background-color: color.adjust(v.$fondo, $lightness: 3%);
          @include m.sombra;
          .blogs__h2 {
             color: v.$color;

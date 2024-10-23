@@ -17,4 +17,15 @@ class ProyectoController {
          'title' => 'Proyectos'
       ]);
    }
+
+   public static function crear(Router $router) {
+      if(!isAdmin()) {
+         header('Location: /');
+         return;
+      }
+
+      $router->renderizar('admin/proyecto/crear', [
+         'title' => 'Añadir Nuevo Proyecto'
+      ]);
+   }
 }

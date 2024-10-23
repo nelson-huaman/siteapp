@@ -12,9 +12,9 @@
       </a>
    </li>
    <li class="menu__item <?php echo paginaActual('proyectos') ? 'menu__activo' : ''; ?>">
-      <a href="/admin/portafolio" class="menu__enlace">
+      <a href="/admin/proyectos" class="menu__enlace">
          <i class="fa-solid fa-diagram-project"></i>
-         <span class="menu__nombre">Portafolio</span>
+         <span class="menu__nombre">Proyectos</span>
       </a>
    </li>
    <li class="menu__item <?php echo paginaActual('blogs') ? 'menu__activo' : ''; ?>">

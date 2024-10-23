@@ -1,5 +1,6 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+@use 'sass:color';
 
 .barra {
    display: flex;
@@ -63,7 +64,7 @@
          display: flex;
          align-items: center;
          justify-content: center;
-         background-color: adjust-color(v.$error, $lightness: -5%);
+         background-color: color.adjust(v.$error, $lightness: -5%);
          color: v.$blanco;
          font-size: 1rem;
          font-weight: v.$medium;

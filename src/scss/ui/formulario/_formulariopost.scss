@@ -1,0 +1,28 @@
+@use 'base/variables' as v;
+@use 'sass:color';
+@use 'base/mixins' as m;
+
+.formulario {
+   
+   &__flex {
+      display: flex;
+      gap: 2rem;
+   }
+
+   &__contenido {
+      flex: 1;
+   }
+
+   &__sidebar {
+      min-width: 35rem;
+      width: 35rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+   }
+
+   &__item {
+      background-color: color.adjust(v.$fondo, $lightness: -1%);
+      padding: 2rem;
+   }
+}

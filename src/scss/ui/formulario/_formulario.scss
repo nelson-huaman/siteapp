@@ -1,5 +1,6 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+@use 'sass:color';
 
 .formulario {
    display: flex;
@@ -25,6 +26,10 @@
       font-weight: v.$medium;
       width: 100%;
       text-align: center;
+
+      &--center {
+         @extend &__legend;
+      }
    }
 
    &__colunm {
@@ -53,7 +58,7 @@
    &__textarea {
       all: unset;
       padding: 1rem;
-      border: 1px solid adjust-color(v.$fondo, $lightness: 75%);;
+      border: 1px solid color.adjust(v.$fondo, $lightness: 75%);;
       border-radius: .6rem;
       box-sizing: border-box;
       width: 100%;
@@ -78,22 +83,5 @@
       &--full {
          width: 100%;
       }
-   }
-
-   // Post
-   &__contenido {
-      flex: 1;
-      background-color: v.$fondo;
-      padding: 2rem;
-   }
-
-   &__sidebar {
-      width: 35rem;
-      
-   }
-
-   &__publicar {
-      padding: 2rem;
-      background-color: v.$fondo;
    }
 }

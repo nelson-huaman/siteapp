@@ -1,5 +1,6 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+@use 'sass:color';
 
 .herramienta {
    @include m.grid(1, 3rem);
@@ -26,7 +27,7 @@
          }
 
          .herramienta__contenido {
-            background-color: adjust-color(v.$fondo, $lightness: 5%);
+            background-color: color.adjust(v.$fondo, $lightness: 5%);
          }
       }
    }
@@ -44,7 +45,7 @@
    }
 
    &__contenido {
-      background-color: adjust-color(v.$fondo, $lightness: 10%);
+      background-color: color.adjust(v.$fondo, $lightness: 10%);
       padding: 3rem;
       border-radius: 1rem;
       z-index: 1;

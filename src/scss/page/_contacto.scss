@@ -1,11 +1,12 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+@use 'sass:color';
 
 .contacto {
    @include m.contenedorSM;
    @include m.sombra;
    text-align: center;
-   background-color: adjust-color(v.$fondo, $lightness: -5%);
+   background-color: color.adjust(v.$fondo, $lightness: -5%);
    padding: 4rem 3rem;
    border-radius: 2rem;
 }

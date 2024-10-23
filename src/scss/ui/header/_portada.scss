@@ -1,5 +1,6 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+@use 'sass:color';
 
 .portada {
    min-height: 55rem;
@@ -7,7 +8,7 @@
    background-repeat: no-repeat;
    background-size: cover, cover;
    background-position: center center, center center;
-   background-color: adjust-color(v.$fondo, $lightness: -5%);
+   background-color: color.adjust(v.$fondo, $lightness: -5%);
 
    &__contenedor {
       @include m.contenedor;

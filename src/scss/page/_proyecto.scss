@@ -1,5 +1,6 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+@use 'sass:color';
 
 .proyecto {
    @include m.contenedor;
@@ -24,7 +25,7 @@
    }
 
    &__info {
-      background-color: adjust-color(v.$fondo, $lightness: -4%);
+      background-color: color.adjust(v.$fondo, $lightness: -4%);
       padding: 2rem;
 
       @include m.desktop {

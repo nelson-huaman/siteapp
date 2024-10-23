@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use 'sass:color';
 
 // Media Queries
 @mixin movil {
@@ -26,7 +27,7 @@
 }
 
 @mixin boton($fondo, $color) {
-   background-color: adjust-color($fondo, $lightness: -20%);
+   background-color: color.adjust($fondo, $lightness: -20%);
    padding: 1.5rem 4rem;
    color: $color;
    font-size: 1.6rem;
@@ -41,7 +42,7 @@
    text-transform: uppercase;
 
    &:hover {
-      background-color: adjust-color($fondo, $lightness: -25%);
+      background-color: color.adjust($fondo, $lightness: -25%);
       cursor: pointer;
    }
 }
@@ -261,7 +262,7 @@
 }
 
 @mixin card {
-   border: 1px solid adjust-color(v.$gris, $lightness: 10%);
+   border: 1px solid color.adjust(v.$gris, $lightness: 10%);
    padding: 3rem;
 
    &__nombre {
@@ -272,5 +273,5 @@
 }
 
 @mixin bg-gradient($fondo) {
-   background-image: linear-gradient(to left top, $fondo, adjust-color($fondo, $lightness: 15%));
+   background-image: linear-gradient(to left top, $fondo, color.adjust($fondo, $lightness: 15%));
 }

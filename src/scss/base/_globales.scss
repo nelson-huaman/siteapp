@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use 'sass:color';
 
 *, *:before, *:after {
    box-sizing: inherit;
@@ -15,7 +16,7 @@ body {
    font-size: 1.5rem;
    line-height: 1.5;
    background-color: v.$fondo;
-   color: adjust-color(v.$fondo, $lightness: 75%);
+   color: color.adjust(v.$fondo, $lightness: 75%);
 }
 
 a {

@@ -1,5 +1,6 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+@use 'sass:color';
 
 .proyectos {
    @include m.contenedor;
@@ -19,12 +20,12 @@
    &__item {
       padding: 2rem;
       border-radius: 1rem;
-      background-color: adjust-color(v.$fondo, $lightness: 1%);
+      background-color: color.adjust(v.$fondo, $lightness: 1%);
       text-align: center;
       @include m.sombra;
 
       &:hover {
-         background-color: adjust-color(v.$fondo, $lightness: 2%);
+         background-color: color.adjust(v.$fondo, $lightness: 2%);
 
          .proyecto__h3 {
             color: v.$color;

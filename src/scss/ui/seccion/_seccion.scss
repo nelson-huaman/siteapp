@@ -1,5 +1,6 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+@use 'sass:color';
 
 .seccion {
    padding: 8rem 0;
@@ -8,7 +9,7 @@
    &:nth-last-of-type(even) {
       // background-color: lighten(v.$error, -3%);
       // background-color: scale-color(v.$fondo, $lightness: -3%);
-      background-color: adjust-color(v.$fondo, $lightness: -3%);
+      background-color: color.adjust(v.$fondo, $lightness: -3%);
    }
 
    &__contenedor {

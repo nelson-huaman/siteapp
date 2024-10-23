@@ -15,7 +15,6 @@
 
       console.log(openMenuMobil);
       
-
       openMenuMobil.addEventListener('click', () => sidebar.classList.add(showMenu) );
       openMenuPC.addEventListener('click', () => sidebar.classList.toggle(toogle) );
       closeMenu.addEventListener('click', () => sidebar.classList.remove(showMenu) );
@@ -38,7 +37,6 @@
             menuItems.forEach( item => item.classList.remove('menu__activo') );
             if(item.querySelector('.menu__submenu')) {
                item.classList.add('menu__activo');
-               
             }
          });
       });
