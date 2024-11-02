@@ -9,7 +9,7 @@
          <div class="formulario__sidebar">
             <div class="formulario__item">
                <legend class="formulario__legend">Detalles</legend>
-               <a href="#">Ver Proyecto</a>
+               <p>Fecha: 2024-10-20</p>
                <input type="submit" value="Publicar" class="formulario__submit formulario__submit--full">
             </div>
             <div class="formulario__item">

@@ -13,75 +13,19 @@
       }
    }
    
-   &__fieldset {
-      all: unset;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-   }
+   
 
-   &__legend {
-      font-size: 2rem;
-      margin-bottom: 1.8rem;
-      font-weight: v.$medium;
-      width: 100%;
-      text-align: center;
+   
 
-      &--center {
-         @extend &__legend;
-      }
-   }
+   
 
-   &__colunm {
-      @include m.grid(1, 1.5rem);
-  
-      @include m.tablet {
-         @include m.grid(2, 1.5rem);
-      }
-   }
+   
 
-   &__row {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: .5rem;
-   }
-
-   &__label {
-      font-size: 1.3rem;
-      padding-left: .5rem;
-      padding-left: 1rem;
-   }
-
-   &__input,
-   &__select,
-   &__textarea {
-      all: unset;
-      padding: 1rem;
-      border: 1px solid color.adjust(v.$fondo, $lightness: 75%);;
-      border-radius: .6rem;
-      box-sizing: border-box;
-      width: 100%;
-      text-align: left;
-   }
+   
 
    &__accion {
       text-align: center;
    }
 
-   &__submit {
-      @include m.boton(v.$color, v.$blanco);
-      & {
-         box-sizing: border-box;
-         
-         @include m.tablet {
-            width: auto;
-         }
-      }
-
-      &--registrar,
-      &--full {
-         width: 100%;
-      }
-   }
+   
 }

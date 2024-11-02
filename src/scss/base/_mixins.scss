@@ -28,7 +28,7 @@
 
 @mixin boton($fondo, $color) {
    background-color: color.adjust($fondo, $lightness: -20%);
-   padding: 1.5rem 4rem;
+   padding: 1.2rem 4rem;
    color: $color;
    font-size: 1.6rem;
    font-weight: v.$semibold;
